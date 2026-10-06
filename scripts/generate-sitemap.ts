@@ -12,7 +12,7 @@
 import { ALL_PUBLIC_PATHS } from '../src/config/pages';
 import { LANGUAGES, siteConfig } from '../src/config/site';
 
-const origin = (siteConfig.url || 'https://webauditpro.example.com').replace(/\/$/, '');
+const origin = (siteConfig.url || 'https://webaudit.pdfkaj.com').replace(/\/$/, '');
 const defaultLang = siteConfig.defaultLanguage;
 
 function localizedPath(path: string, code: string): string {

@@ -1,8 +1,8 @@
-# WebAudit by PDFKaj — https://webauditpro.example.com
+# WebAudit by PDFKaj — https://webaudit.pdfkaj.com
 User-agent: *
 Allow: /
 
 # Audit run endpoints are client-side only; nothing to crawl here.
 Disallow: /report/
 
-Sitemap: https://webauditpro.example.com/sitemap.xml
+Sitemap: https://webaudit.pdfkaj.com/sitemap.xml

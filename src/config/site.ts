@@ -47,10 +47,10 @@ export const siteConfig: SiteConfig = {
   tagline: 'Analyze. Fix. Improve.',
   description:
     'Run a free comprehensive website audit: SEO, performance, accessibility, security, technical SEO, content and social checks with scores, charts, actionable fixes and PDF reports.',
-  url: (env.VITE_SITE_URL ?? '').replace(/\/$/, '') || 'https://webauditpro.example.com',
+  url: (env.VITE_SITE_URL ?? '').replace(/\/$/, '') || 'https://webaudit.pdfkaj.com',
   domain:
     (env.VITE_SITE_URL ?? '').replace(/^https?:\/\//, '').replace(/\/$/, '') ||
-    'webauditpro.example.com',
+    'webaudit.pdfkaj.com',
   logo: '/favicon.svg',
   favicon: '/favicon.svg',
   defaultLanguage: 'en',

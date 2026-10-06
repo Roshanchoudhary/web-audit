@@ -1,4 +1,4 @@
-# WebAudit by PDFKaj — https://webauditpro.example.com
+# WebAudit by PDFKaj — https://webaudit.pdfkaj.com/
 User-agent: *
 Allow: /
 

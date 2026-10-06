@@ -215,9 +215,9 @@ export default function Home() {
                 {t('hero.badge')}
               </span>
               <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] tracking-tight text-ink-950 sm:text-5xl lg:text-6xl">
-                {t('hero.title')}{' '}
+                {siteConfig.name}{' '}
                 <span className="bg-gradient-to-r from-brand-600 to-emerald-500 bg-clip-text text-transparent">
-                  {t('hero.accent')}
+                  {siteConfig.tagline}
                 </span>
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-700/85">

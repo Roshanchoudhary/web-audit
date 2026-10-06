@@ -108,7 +108,7 @@
     "subtitle": "Everything you need to know about the free website audit.",
     "items": [
       {
-        "q": "Is WebAudit Pro really free?",
+        "q": "Is WebAudit by PDFKaj really free?",
         "a": "Yes. The full audit, scores, charts, PDF download and sharing are free, with no signup or credit card. Optional ads keep it free."
       },
       {
@@ -135,12 +135,12 @@
   },
   "seoCopy": {
     "h2a": "What does the free website audit check?",
-    "p1": "WebAudit Pro evaluates every page it can read across seven categories: on-page SEO (titles, meta descriptions, headings, canonicals, structured data), performance signals (resource counts, render-blocking scripts, image optimisation), accessibility (alt text, form labels, landmarks, heading order), security basics observable from the browser (HTTPS, mixed content, security meta tags), technical SEO (robots.txt, sitemap, redirects, URL structure, hreflang), content depth (word count, text-to-HTML ratio, readability) and social metadata (Open Graph, Twitter/X cards).",
+    "p1": "WebAudit by PDFKaj evaluates every page it can read across seven categories: on-page SEO (titles, meta descriptions, headings, canonicals, structured data), performance signals (resource counts, render-blocking scripts, image optimisation), accessibility (alt text, form labels, landmarks, heading order), security basics observable from the browser (HTTPS, mixed content, security meta tags), technical SEO (robots.txt, sitemap, redirects, URL structure, hreflang), content depth (word count, text-to-HTML ratio, readability) and social metadata (Open Graph, Twitter/X cards).",
     "h2b": "Why run an audit before every launch?",
     "p2": "A missing meta description, a broken heading hierarchy or an image without alt text rarely breaks a site — but together they cost rankings, conversions and accessibility compliance. Fixing issues before launch is orders of magnitude cheaper than patching them after users and crawlers have seen the page.",
     "h2c": "Browser-based vs server-side analysis",
     "p3": "Accuracy matters more than impressive-looking numbers. This tool runs in your browser, so it can only report what a browser can observe: the HTML it can fetch and the DOM it can parse. Anything requiring server-side access — response headers, crawling an entire domain, Core Web Vitals field data, backlink indexes — is labelled “Requires server/API analysis” rather than faked. Connect the API adapter described in the README to unlock those checks.",
-    "p4": "WebAudit Pro is multilingual by design: switch language from any page and the whole interface, the report and the PDF follow — including right-to-left layouts for Arabic, Urdu and Persian."
+    "p4": "WebAudit by PDFKaj is multilingual by design: switch language from any page and the whole interface, the report and the PDF follow — including right-to-left layouts for Arabic, Urdu and Persian."
   },
   "audit": {
     "errors": {
@@ -398,9 +398,9 @@
   "pages": {
     "about": {
       "title": "About",
-      "description": "Why WebAudit Pro exists: honest, accessible, multilingual website audits with transparent scoring and no signup.",
-      "h1": "About WebAudit Pro",
-      "p1": "WebAudit Pro started from a simple frustration: most free “website checkers” show impressive numbers they cannot possibly know. A browser cannot read your server's security headers, and a single fetch is not a crawl — so we refuse to pretend otherwise.",
+      "description": "Why WebAudit by PDFKaj exists: honest, accessible, multilingual website audits with transparent scoring and no signup.",
+      "h1": "About WebAudit by PDFKaj",
+      "p1": "WebAudit by PDFKaj started from a simple frustration: most free “website checkers” show impressive numbers they cannot possibly know. A browser cannot read your server's security headers, and a single fetch is not a crawl — so we refuse to pretend otherwise.",
       "p2": "Every check in this tool carries a measurement badge: measured directly, estimated, or requires server/API analysis. The scoring engine never awards points for checks it could not run, and every report lists its own gaps.",
       "p3": "The product is free, multilingual (30 languages, including Maithili with full Devanagari support) and built as a static site — no accounts, no personal data, no backend to breach.",
       "valuesTitle": "What we optimise for",
@@ -413,7 +413,7 @@
     },
     "contact": {
       "title": "Contact",
-      "description": "Get in touch with the WebAudit Pro team — questions, feedback, partnerships and bug reports.",
+      "description": "Get in touch with the WebAudit by PDFKaj team — questions, feedback, partnerships and bug reports.",
       "h1": "Contact us",
       "intro": "Have a question, found a bug, or want to partner on integrations? We read everything.",
       "emailLabel": "Email",
@@ -428,19 +428,19 @@
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "How WebAudit Pro handles data: local report storage, optional analytics and advertising cookies.",
+      "description": "How WebAudit by PDFKaj handles data: local report storage, optional analytics and advertising cookies.",
       "h1": "Privacy Policy",
       "updated": "Last updated"
     },
     "terms": {
       "title": "Terms of Service",
-      "description": "The terms that apply when you use WebAudit Pro.",
+      "description": "The terms that apply when you use WebAudit by PDFKaj.",
       "h1": "Terms of Service",
       "updated": "Last updated"
     },
     "disclaimer": {
       "title": "Disclaimer",
-      "description": "Important limitations of the audit results provided by WebAudit Pro.",
+      "description": "Important limitations of the audit results provided by WebAudit by PDFKaj.",
       "h1": "Disclaimer",
       "updated": "Last updated"
     }

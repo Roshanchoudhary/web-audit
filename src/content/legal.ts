@@ -20,7 +20,7 @@ export const privacyContent: LegalDocument = {
     {
       heading: 'Overview',
       paragraphs: [
-        'WebAudit Pro is a static website that audits publicly accessible web pages from your browser. We do not require an account and we do not ask for personal information.',
+        'WebAudit by PDFKaj is a static website that audits publicly accessible web pages from your browser. We do not require an account and we do not ask for personal information.',
         'This policy explains what happens when you use the tool, which optional services load, and what you can control.',
       ],
     },
@@ -66,7 +66,7 @@ export const termsContent: LegalDocument = {
     {
       heading: 'Acceptance',
       paragraphs: [
-        'By using WebAudit Pro you agree to these terms. If you do not agree, please do not use the service.',
+        'By using WebAudit by PDFKaj you agree to these terms. If you do not agree, please do not use the service.',
       ],
     },
     {
@@ -79,7 +79,7 @@ export const termsContent: LegalDocument = {
     {
       heading: 'The service is provided “as is”',
       paragraphs: [
-        'WebAudit Pro performs browser-observable checks and clearly marks anything it cannot measure. Results may be incomplete, outdated or different from a full server-side audit. No warranty of any kind is given, including fitness for a particular purpose.',
+        'WebAudit by PDFKaj performs browser-observable checks and clearly marks anything it cannot measure. Results may be incomplete, outdated or different from a full server-side audit. No warranty of any kind is given, including fitness for a particular purpose.',
       ],
     },
     {
@@ -91,7 +91,7 @@ export const termsContent: LegalDocument = {
     {
       heading: 'Limitation of liability',
       paragraphs: [
-        'To the maximum extent permitted by law, the operators of WebAudit Pro shall not be liable for any indirect, incidental or consequential damage arising from the use of the service, including lost rankings, lost revenue or security incidents on audited sites.',
+        'To the maximum extent permitted by law, the operators of WebAudit by PDFKaj shall not be liable for any indirect, incidental or consequential damage arising from the use of the service, including lost rankings, lost revenue or security incidents on audited sites.',
       ],
     },
     {
@@ -109,7 +109,7 @@ export const disclaimerContent: LegalDocument = {
     {
       heading: 'Audit results are informational',
       paragraphs: [
-        'WebAudit Pro reports what a browser can observe about a single public page. Scores, grades and recommendations are informational guidance — not a guarantee of search-engine rankings, traffic, security, compliance or performance.',
+        'WebAudit by PDFKaj reports what a browser can observe about a single public page. Scores, grades and recommendations are informational guidance — not a guarantee of search-engine rankings, traffic, security, compliance or performance.',
         'Search engines use hundreds of signals far beyond on-page markup, and they change those signals regularly. A high score does not imply a page will rank; a low score does not imply it will not.',
       ],
     },

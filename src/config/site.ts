@@ -42,9 +42,9 @@ export const LANGUAGES: Language[] = [
 const env = import.meta.env;
 
 export const siteConfig: SiteConfig = {
-  name: 'WebAudit Pro',
+  name: 'WebAudit by PDFKaj',
   shortName: 'WebAudit',
-  tagline: 'Premium website audits, free for everyone.',
+  tagline: 'Analyze. Fix. Improve.',
   description:
     'Run a free comprehensive website audit: SEO, performance, accessibility, security, technical SEO, content and social checks with scores, charts, actionable fixes and PDF reports.',
   url: (env.VITE_SITE_URL ?? '').replace(/\/$/, '') || 'https://webauditpro.example.com',

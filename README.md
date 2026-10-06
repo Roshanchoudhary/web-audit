@@ -1,4 +1,4 @@
-# WebAudit Pro
+# WebAudit by PDFKaj
 
 Free, multilingual website audit tool. Paste any URL and get a 7-category report — **SEO, Performance, Accessibility, Security, Technical SEO, Content, Social** — with ~75 checks, honest scoring, charts, actionable fixes and a client-side PDF download. No account, no server, no tracking by default.
 

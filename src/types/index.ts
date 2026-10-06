@@ -1,5 +1,5 @@
 /* -----------------------------------------------------------------------------
- * WebAudit Pro — central data model.
+ * WebAudit by PDFKaj — central data model.
  * Every shared interface of the product lives here (see README “Architecture”).
  * ---------------------------------------------------------------------------*/
 

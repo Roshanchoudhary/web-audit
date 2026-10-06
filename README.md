@@ -85,7 +85,7 @@ Reports persist in `localStorage` (`wap.reports.v1`, max 12, one per URL) — sh
 **Cloudflare Pages** (connect the GitHub repo: Workers & Pages → Create → Pages → Connect to Git):
 
 - Build command `bun run build`, output directory `dist` (Vite is auto-detected).
-- Build variable **`BUN_VERSION=1.4.2`** — required. Cloudflare's default bun (1.2.15) cannot parse this repo's `bun.lock` (`lockfileVersion: 2`), so its automatic `bun install --frozen-lockfile` fails with _Unknown lockfile version_. Keep the value in sync with the bun version that writes the lockfile (`bun --version`). Alternative without overriding bun: install `npm install`, build `npm run build`.
+- No build variables are required for the install: the committed `bun.lock` uses `lockfileVersion: 1`, which Cloudflare's default bun (1.2.15) parses as-is, so its automatic `bun install --frozen-lockfile` succeeds. (A _freshly generated_ lockfile under bun ≥ 1.4 gets `lockfileVersion: 2`, which bun 1.2.15 cannot read; if that ever happens, restore the committed lockfile or set build variable `BUN_VERSION` to your local `bun --version`.)
 - Set `VITE_SITE_URL` to your production domain so canonicals, robots.txt and the sitemap point at the real origin.
 - SPA routing ships in the repo: `public/_redirects` serves `index.html` for client-side routes (`/*  /index.html  200`) while existing static files such as `robots.txt` and `sitemap.xml` keep serving directly.
 

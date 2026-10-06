@@ -1,0 +1,207 @@
+{
+  "common": {
+    "skipToContent": "본문으로 건너뛰기",
+    "loading": "로딩 중…",
+    "close": "닫기",
+    "copy": "복사",
+    "copied": "복사됨!",
+    "retry": "다시 시도",
+    "selectLanguage": "언어 선택",
+    "expand": "세부 정보 보기",
+    "collapse": "세부 정보 숨기기",
+    "notAvailable": "사용 불가"
+  },
+  "nav": {
+    "home": "홈",
+    "product": "제품",
+    "tools": "도구",
+    "about": "소개",
+    "contact": "문의",
+    "cta": "무료 감사 시작",
+    "menuOpen": "메뉴 열기",
+    "menuClose": "메뉴 닫기"
+  },
+  "hero": {
+    "badge": "무료 · 가입 불필요",
+    "title": "무료 웹사이트 감사",
+    "accent": "모든 웹사이트를 위해",
+    "subtitle": "모든 웹사이트의 SEO, 성능, 접근성, 보안, 기술적 건전성, 콘텐츠, 소셜 메타데이터를 분석하세요 — 점수, 차트, 실행 가능한 리포트를 받고 PDF로도 다운로드할 수 있습니다.",
+    "urlLabel": "웹사이트 URL",
+    "placeholder": "https://example.com",
+    "cta": "무료 감사 시작",
+    "auditing": "감사 시작 중…",
+    "microcopy": "브라우저에서 실행됩니다. 계정도, 개인정보도 없습니다.",
+    "trust": [
+      "가입 불필요",
+      "기본 감사 무료",
+      "PDF 리포트 다운로드",
+      "마이틸리어 포함 30개 언어",
+      "실행 가능한 권장 사항"
+    ]
+  },
+  "home": {
+    "featuresTitle": "더 건강한 웹사이트를 위한 모든 것",
+    "howTitle": "작동 방식",
+    "ctaTitle": "웹사이트를 개할 준비가 되셨나요?",
+    "cta": "무료 감사 시작"
+  },
+  "audit": {
+    "errorTitle": "이 감사를 실행할 수 없습니다",
+    "runAgain": "감사 다시 실행",
+    "errors": {
+      "empty_url": "감사할 웹사이트 URL을 입력하세요.",
+      "invalid_url": "올바른 URL이 아닌 것 같습니다. 이렇게 입력해 보세요: https://example.com",
+      "unsupported_protocol": "http:// 및 https:// 웹사이트만 감사할 수 있습니다.",
+      "timeout": "웹사이트 응답이 너무 오래 걸렸습니다. 다시 시도하세요.",
+      "network": "브라우저에서 이 웹사이트에 접근할 수 없습니다. 오프라인이거나 요청을 차단하고 있을 수 있습니다.",
+      "cors": "브라우저에서 이 웹사이트를 직접 분석할 수 없습니다. 일부 검사에는 서버 측 접근이 필요합니다.",
+      "not_found": "페이지가 «찾을 수 없음»(404)을 반환했습니다. URL을 확인하고 다시 시도하세요.",
+      "too_large": "이 페이지는 브라우저에서 안전하게 분석하기엔 너무 큽니다.",
+      "blocked": "이 웹사이트가 분석 요청을 차단했습니다.",
+      "api_failed": "감사 API를 현재 사용할 수 없습니다. 나중에 다시 시도하세요.",
+      "unknown": "감사 실행 중 문제가 발생했습니다. 다시 시도하세요."
+    }
+  },
+  "progress": {
+    "title": "감사를 진행 중입니다",
+    "subtitle": "이 탭을 열어 두세요 — 전체 분석은 브라우저에서 실행됩니다.",
+    "percent": "{percent}% 완료",
+    "stages": {
+      "validate": "URL 확인 중…",
+      "fetch": "페이지 다운로드 중…",
+      "aux": "robots.txt 및 사이트맵 검색 중…",
+      "seo": "SEO 분석 중…",
+      "performance": "성능 지표 확인 중…",
+      "accessibility": "접근성 확인 중…",
+      "security": "보안 기초 검토 중…",
+      "technical": "기술 구조 확인 중…",
+      "content": "콘텐츠 분석 중…",
+      "social": "소셜 메타데이터 확인 중…",
+      "generate": "권장 사항 준비 중…",
+      "done": "리포트 준비 완료"
+    }
+  },
+  "report": {
+    "title": "감사 리포트",
+    "auditedUrl": "감사된 URL",
+    "auditedOn": "감사 날짜",
+    "overall": "전체 점수",
+    "previousScore": "이전 점수",
+    "firstAudit": "이 URL의 첫 감사",
+    "summary": {
+      "issues": "문제",
+      "critical": "치명적",
+      "errors": "오류",
+      "warnings": "경고",
+      "passed": "통과",
+      "notAvailable": "사용 불가",
+      "coverage": "{total}개 검사 중 {measured}개 측정 가능"
+    },
+    "grades": {
+      "poor": "나쁨",
+      "needs_improvement": "개선 필요",
+      "good": "좋음",
+      "very_good": "매우 좋음",
+      "excellent": "훌림",
+      "unavailable": "사용 불가"
+    },
+    "categories": {
+      "seo": { "name": "SEO" },
+      "performance": { "name": "성능" },
+      "accessibility": { "name": "접근성" },
+      "security": { "name": "보안" },
+      "technical": { "name": "기술 SEO" },
+      "content": { "name": "콘텐츠" },
+      "social": { "name": "소셜" }
+    },
+    "sections": {
+      "scores": "점수 개요",
+      "recommendations": "주요 권장 사항",
+      "issues": "모든 문제",
+      "metrics": "측정된 지표",
+      "social": "소셜 미리보기"
+    },
+    "charts": {
+      "categoryTitle": "카테고리별 점수",
+      "distributionTitle": "검사 결과",
+      "coverageNote": "점수에는 측정 가능한 검사만 포함됩니다. 사용 불가 검사는 점수를 부여하지 않습니다."
+    },
+    "filters": {
+      "all": "전체",
+      "critical": "치명적",
+      "errors": "오류",
+      "warnings": "경고",
+      "passed": "통과",
+      "notAvailable": "사용 불가"
+    },
+    "fields": {
+      "what": "발견한 내용",
+      "why": "중요한 이유",
+      "fix": "해결 방법",
+      "technical": "기술적 세부 정보",
+      "evidence": "증거"
+    },
+    "status": { "pass": "통과", "warning": "경고", "fail": "실패", "not_available": "사용 불가" },
+    "severity": { "critical": "치명적", "high": "높음", "medium": "중간", "low": "낮음" },
+    "measurement": {
+      "measured": "측정됨",
+      "estimated": "추정",
+      "unavailable": "사용 불가",
+      "requires_api": "서버/API 분석 필요"
+    },
+    "recommendations": { "empty": "실패한 검사가 없습니다 — 지금 당장 고칠 것이 없습니다." },
+    "empty": {
+      "title": "표시할 내용이 없습니다",
+      "text": "이 필터에서 문제가 발견되지 않았습니다."
+    },
+    "notFound": {
+      "title": "리포트를 찾을 수 없습니다",
+      "text": "이 리포트 링크는 이 기기에서 사용할 수 없습니다. 리포트는 브라우저에 로컬로 저장됩니다 — 새 리포트를 위해 감사를 다시 실행하세요.",
+      "cta": "무료 감사 시작"
+    },
+    "new": { "title": "다음 감사할 준비가 되셨나요?", "cta": "새 감사 실행" },
+    "share": {
+      "copy": "리포트 링크 복사",
+      "copied": "리포트 링크가 복사되었습니다.",
+      "failed": "링크를 복사할 수 없습니다.",
+      "note": "링크는 이 기기에서만 열립니다. 리포트는 브라우저의 로컬 저장소에 있습니다."
+    },
+    "pdf": {
+      "download": "PDF 리포트 다운로드",
+      "generating": "PDF 생성 중…",
+      "failed": "PDF 생성에 실패했습니다. 다시 시도하거나 리포트 인쇄를 해 보세요.",
+      "print": "리포트 인쇄"
+    }
+  },
+  "notFoundPage": {
+    "title": "페이지를 찾을 수 없습니다",
+    "text": "찾으시는 페이지가 존재하지 않거나 이동되었습니다.",
+    "home": "홈으로 이동"
+  },
+  "consent": {
+    "title": "쿠키 및 개인정보",
+    "text": "Google Analytics와 광고를 위해 선택적 쿠키를 사용합니다. 감사 도구는 이것 없이도 완전히 작동합니다.",
+    "accept": "동의",
+    "reject": "거부",
+    "manage": "설정 관리",
+    "save": "설정 저장"
+  },
+  "ads": { "label": "광고", "placeholder": "광고 공간" },
+  "footer": {
+    "tagline": "정확하고 정직한 웹사이트 감사 — 무료, 다국어 지원.",
+    "product": "제품",
+    "resources": "리소스",
+    "company": "회사",
+    "language": "언어",
+    "rights": "모든 권리 보유."
+  },
+  "tools": {
+    "shared": { "runCta": "무료 감사 시작" },
+    "seoAudit": "웹사이트 SEO 감사",
+    "freeSeoAudit": "무료 SEO 감사",
+    "performanceTest": "웹사이트 성능 테스트",
+    "accessibilityChecker": "웹사이트 접근성 검사기",
+    "technicalSeoAudit": "기술 SEO 감사",
+    "securityCheck": "웹사이트 보안 점검"
+  }
+}

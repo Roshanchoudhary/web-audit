@@ -1,0 +1,214 @@
+{
+  "common": {
+    "skipToContent": "Zum Hauptinhalt springen",
+    "loading": "Wird geladen…",
+    "close": "Schließen",
+    "copy": "Kopieren",
+    "copied": "Kopiert!",
+    "retry": "Erneut versuchen",
+    "selectLanguage": "Sprache wählen",
+    "expand": "Details anzeigen",
+    "collapse": "Details ausblenden",
+    "notAvailable": "Nicht verfügbar"
+  },
+  "nav": {
+    "home": "Startseite",
+    "product": "Produkt",
+    "tools": "Tools",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "cta": "Kostenlosen Audit starten",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen"
+  },
+  "hero": {
+    "badge": "Kostenlos · Ohne Anmeldung",
+    "title": "Kostenloser Website-Audit",
+    "accent": "für jede Website",
+    "subtitle": "Analysiere SEO, Leistung, Barrierefreiheit, Sicherheit, technische Gesundheit, Inhalte und Social-Metadaten jeder Website — mit Scores, Diagrammen und umsetzbaren Berichten, die sich als PDF herunterladen lassen.",
+    "urlLabel": "Website-URL",
+    "placeholder": "https://example.com",
+    "cta": "Kostenlosen Audit starten",
+    "auditing": "Audit wird gestartet…",
+    "microcopy": "Läuft in deinem Browser. Kein Konto, keine persönlichen Daten.",
+    "trust": [
+      "Ohne Anmeldung",
+      "Kostenloser Basis-Audit",
+      "PDF-Bericht herunterladen",
+      "30 Sprachen inkl. Maithili",
+      "Umsetzbare Empfehlungen"
+    ]
+  },
+  "home": {
+    "featuresTitle": "Alles für eine gesündere Website",
+    "howTitle": "So funktioniert es",
+    "ctaTitle": "Bereit, deine Website zu verbessern?",
+    "cta": "Kostenlosen Audit starten"
+  },
+  "audit": {
+    "errorTitle": "Dieser Audit konnte nicht gestartet werden",
+    "runAgain": "Audit erneut ausführen",
+    "errors": {
+      "empty_url": "Bitte gib die URL der Website ein, die du prüfen möchtest.",
+      "invalid_url": "Das sieht nicht nach einer gültigen URL aus. Versuche: https://example.com",
+      "unsupported_protocol": "Nur Websites mit http:// und https:// können geprüft werden.",
+      "timeout": "Die Website hat zu lange nicht geantwortet. Bitte versuche es erneut.",
+      "network": "Diese Website konnte von deinem Browser aus nicht erreicht werden. Sie ist möglicherweise offline oder blockiert die Anfrage.",
+      "cors": "Diese Website konnte direkt aus deinem Browser nicht analysiert werden. Einige Prüfungen erfordern serverseitigen Zugriff.",
+      "not_found": "Die Seite meldete „Nicht gefunden“ (404). Prüfe die URL und versuche es erneut.",
+      "too_large": "Diese Seite ist zu groß, um sie in deinem Browser sicher zu analysieren.",
+      "blocked": "Diese Website hat die Analyse-Anfrage blockiert.",
+      "api_failed": "Die Audit-API ist derzeit nicht verfügbar. Bitte versuche es später erneut.",
+      "unknown": "Beim Ausführen des Audits ist ein Fehler aufgetreten. Bitte versuche es erneut."
+    }
+  },
+  "progress": {
+    "title": "Dein Audit läuft",
+    "subtitle": "Halte diesen Tab offen — die vollständige Analyse läuft in deinem Browser.",
+    "percent": "{percent}% abgeschlossen",
+    "stages": {
+      "validate": "URL wird geprüft…",
+      "fetch": "Seite wird heruntergeladen…",
+      "aux": "robots.txt und Sitemap werden gesucht…",
+      "seo": "SEO-Analyse läuft…",
+      "performance": "Leistungskennzahlen werden geprüft…",
+      "accessibility": "Barrierefreiheit wird geprüft…",
+      "security": "Sicherheitsgrundlagen werden überprüft…",
+      "technical": "Technische Struktur wird geprüft…",
+      "content": "Inhalte werden analysiert…",
+      "social": "Social-Metadaten werden geprüft…",
+      "generate": "Empfehlungen werden vorbereitet…",
+      "done": "Bericht fertig"
+    }
+  },
+  "report": {
+    "title": "Audit-Bericht",
+    "auditedUrl": "Geprüfte URL",
+    "auditedOn": "Datum des Audits",
+    "overall": "Gesamtscore",
+    "previousScore": "Vorheriger Score",
+    "firstAudit": "Erster Audit dieser URL",
+    "summary": {
+      "issues": "Probleme",
+      "critical": "Kritisch",
+      "errors": "Fehler",
+      "warnings": "Warnungen",
+      "passed": "Bestanden",
+      "notAvailable": "Nicht verfügbar",
+      "coverage": "{measured} von {total} Prüfungen messbar"
+    },
+    "grades": {
+      "poor": "Schwach",
+      "needs_improvement": "Verbesserungsbedarf",
+      "good": "Gut",
+      "very_good": "Sehr gut",
+      "excellent": "Ausgezeichnet",
+      "unavailable": "Nicht verfügbar"
+    },
+    "categories": {
+      "seo": { "name": "SEO" },
+      "performance": { "name": "Leistung" },
+      "accessibility": { "name": "Barrierefreiheit" },
+      "security": { "name": "Sicherheit" },
+      "technical": { "name": "Technisches SEO" },
+      "content": { "name": "Inhalt" },
+      "social": { "name": "Social" }
+    },
+    "sections": {
+      "scores": "Score-Überblick",
+      "recommendations": "Top-Empfehlungen",
+      "issues": "Alle Probleme",
+      "metrics": "Gemessene Kennzahlen",
+      "social": "Social-Vorschau"
+    },
+    "charts": {
+      "categoryTitle": "Scores nach Kategorie",
+      "distributionTitle": "Prüfergebnisse",
+      "coverageNote": "Der Score enthält nur messbare Prüfungen; nicht verfügbare Prüfungen vergeben keine Punkte."
+    },
+    "filters": {
+      "all": "Alle",
+      "critical": "Kritisch",
+      "errors": "Fehler",
+      "warnings": "Warnungen",
+      "passed": "Bestanden",
+      "notAvailable": "Nicht verfügbar"
+    },
+    "fields": {
+      "what": "Was wir gefunden haben",
+      "why": "Warum das wichtig ist",
+      "fix": "So behebst du es",
+      "technical": "Technische Details",
+      "evidence": "Nachweis"
+    },
+    "status": {
+      "pass": "Bestanden",
+      "warning": "Warnung",
+      "fail": "Fehlgeschlagen",
+      "not_available": "Nicht verfügbar"
+    },
+    "severity": { "critical": "Kritisch", "high": "Hoch", "medium": "Mittel", "low": "Niedrig" },
+    "measurement": {
+      "measured": "Gemessen",
+      "estimated": "Geschätzt",
+      "unavailable": "Nicht verfügbar",
+      "requires_api": "Server-/API-Analyse erforderlich"
+    },
+    "recommendations": {
+      "empty": "Keine fehlgeschlagenen Prüfungen — im Moment gibt es nichts zu beheben."
+    },
+    "empty": {
+      "title": "Nichts anzuzeigen",
+      "text": "Mit diesem Filter wurden keine Probleme gefunden."
+    },
+    "notFound": {
+      "title": "Bericht nicht gefunden",
+      "text": "Dieser Berichtslink ist auf diesem Gerät nicht verfügbar. Berichte werden lokal in deinem Browser gespeichert — starte den Audit für einen neuen Bericht.",
+      "cta": "Kostenlosen Audit starten"
+    },
+    "new": { "title": "Bereit für den nächsten Audit?", "cta": "Neuen Audit starten" },
+    "share": {
+      "copy": "Berichtslink kopieren",
+      "copied": "Berichtslink kopiert.",
+      "failed": "Link konnte nicht kopiert werden.",
+      "note": "Der Link öffnet sich auf diesem Gerät: Der Bericht bleibt im lokalen Speicher deines Browsers."
+    },
+    "pdf": {
+      "download": "PDF-Bericht herunterladen",
+      "generating": "PDF wird erstellt…",
+      "failed": "Das Erstellen des PDF ist fehlgeschlagen. Bitte versuche es erneut oder drucke den Bericht.",
+      "print": "Bericht drucken"
+    }
+  },
+  "notFoundPage": {
+    "title": "Seite nicht gefunden",
+    "text": "Die Seite, die du suchst, existiert nicht oder wurde verschoben.",
+    "home": "Zur Startseite"
+  },
+  "consent": {
+    "title": "Cookies und Datenschutz",
+    "text": "Wir verwenden optionale Cookies für Google Analytics und Werbung. Das Audit-Tool funktioniert auch ohne sie einwandfrei.",
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen",
+    "manage": "Einstellungen verwalten",
+    "save": "Einstellungen speichern"
+  },
+  "ads": { "label": "Werbung", "placeholder": "Werbefläche" },
+  "footer": {
+    "tagline": "Präzise, ehrliche Website-Audits — kostenlos und mehrsprachig.",
+    "product": "Produkt",
+    "resources": "Ressourcen",
+    "company": "Unternehmen",
+    "language": "Sprache",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "tools": {
+    "shared": { "runCta": "Kostenlosen Audit starten" },
+    "seoAudit": "Website-SEO-Audit",
+    "freeSeoAudit": "Kostenloser SEO-Audit",
+    "performanceTest": "Website-Leistungstest",
+    "accessibilityChecker": "Barrierefreiheits-Checker",
+    "technicalSeoAudit": "Technisches SEO-Audit",
+    "securityCheck": "Website-Sicherheitscheck"
+  }
+}

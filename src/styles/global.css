@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink-900 antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    @apply bg-brand-100 text-brand-950;
+  }
+
+  /* Visible, consistent keyboard focus everywhere. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-600 ring-offset-2;
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply sr-only;
+  }
+
+  .skip-link:focus {
+    @apply fixed start-4 top-4 z-[60] inline-flex h-10 items-center rounded-lg bg-white px-4 text-sm font-semibold text-ink-950 shadow-lift;
+  }
+
+  .surface {
+    @apply rounded-3xl border border-slate-200 bg-white shadow-card;
+  }
+}
+
+/* ------------------------------------------------------------------ print */
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  header,
+  footer,
+  nav,
+  .no-print,
+  [role='region'][aria-label='Cookies & privacy'] {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  main {
+    min-height: auto !important;
+    padding: 0 !important;
+  }
+
+  .print-break {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .surface,
+  details {
+    box-shadow: none !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* ------------------------------------------------------- reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

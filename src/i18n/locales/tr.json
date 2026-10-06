@@ -1,0 +1,209 @@
+{
+  "common": {
+    "skipToContent": "Ana içeriğe geç",
+    "loading": "Yükleniyor…",
+    "close": "Kapat",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı!",
+    "retry": "Tekrar dene",
+    "selectLanguage": "Dil seçin",
+    "expand": "Ayrıntıları göster",
+    "collapse": "Ayrıntıları gizle",
+    "notAvailable": "Kullanılamıyor"
+  },
+  "nav": {
+    "home": "Ana sayfa",
+    "product": "Ürün",
+    "tools": "Araçlar",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "cta": "Ücretsiz denetim başlat",
+    "menuOpen": "Menüyü aç",
+    "menuClose": "Menüyü kapat"
+  },
+  "hero": {
+    "badge": "Ücretsiz · Kayıt gerekmez",
+    "title": "Ücretsiz web sitesi denetimi",
+    "accent": "her web sitesi için",
+    "subtitle": "Her web sitesinin SEO'sunu, performansını, erişilebilirliğini, güvenliğini, teknik sağlığını, içeriğini ve sosyal meta verilerini analiz edin — puanlar, grafikler ve uygulanabilir raporlar alın, PDF olarak indirin.",
+    "urlLabel": "Web sitesi URL'si",
+    "placeholder": "https://example.com",
+    "cta": "Ücretsiz denetim başlat",
+    "auditing": "Denetim başlatılıyor…",
+    "microcopy": "Tarayıcınızda çalışır. Hesap yok, kişisel veri yok.",
+    "trust": [
+      "Kayıt gerekmez",
+      "Ücretsiz temel denetim",
+      "PDF raporu indir",
+      "Maithili dahil 30 dil",
+      "Uygulanabilir öneriler"
+    ]
+  },
+  "home": {
+    "featuresTitle": "Daha sağlıklı bir site için her şey",
+    "howTitle": "Nasıl çalışır",
+    "ctaTitle": "Sitenizi geliştirmeye hazır mısınız?",
+    "cta": "Ücretsiz denetim başlat"
+  },
+  "audit": {
+    "errorTitle": "Bu denetimi çalıştıramadık",
+    "runAgain": "Denetimi tekrar çalıştır",
+    "errors": {
+      "empty_url": "Lütfen denetilecek web sitesinin URL'sini girin.",
+      "invalid_url": "Bu geçerli bir URL'ye benzemiyor. Şunu yazmayı deneyin: https://example.com",
+      "unsupported_protocol": "Yalnızca http:// ve https:// web siteleri denetlenebilir.",
+      "timeout": "Site yanıt vermek için çok uzun sürdü. Lütfen tekrar deneyin.",
+      "network": "Bu siteye tarayıcınızdan ulaşamadık. Çevrimdışı olabilir veya isteği engelliyor olabilir.",
+      "cors": "Bu siteyi tarayıcınızdan doğrudan analiz edemedik. Bazı kontroller sunucu tarafı erişim gerektirir.",
+      "not_found": "Sayfa «bulunamadı» (404) döndürdü. URL'yi kontrol edip tekrar deneyin.",
+      "too_large": "Bu sayfa tarayıcınızda güvenli şekilde analiz etmek için çok büyük.",
+      "blocked": "Bu site analiz isteğini engelledi.",
+      "api_failed": "Denetim API'si şu anda kullanılamıyor. Lütfen daha sonra tekrar deneyin.",
+      "unknown": "Denetim çalıştırılırken bir şeyler ters gitti. Lütfen tekrar deneyin."
+    }
+  },
+  "progress": {
+    "title": "Denetiminiz çalışıyor",
+    "subtitle": "Bu sekme açık kalsın — tam analiz tarayıcınızda çalışır.",
+    "percent": "%{percent} tamamlandı",
+    "stages": {
+      "validate": "URL doğrulanıyor…",
+      "fetch": "Sayfa indiriliyor…",
+      "aux": "robots.txt ve site haritası aranıyor…",
+      "seo": "SEO analiz ediliyor…",
+      "performance": "Performans göstergeleri kontrol ediliyor…",
+      "accessibility": "Erişilebilirlik kontrol ediliyor…",
+      "security": "Güvenlik temelleri gözden geçiriliyor…",
+      "technical": "Teknik yapı kontrol ediliyor…",
+      "content": "İçerik analiz ediliyor…",
+      "social": "Sosyal meta veriler kontrol ediliyor…",
+      "generate": "Öneriler hazırlanıyor…",
+      "done": "Rapor hazır"
+    }
+  },
+  "report": {
+    "title": "Denetim raporu",
+    "auditedUrl": "Denetlenen URL",
+    "auditedOn": "Denetim tarihi",
+    "overall": "Genel puan",
+    "previousScore": "Önceki puan",
+    "firstAudit": "Bu URL'nin ilk denetimi",
+    "summary": {
+      "issues": "Sorunlar",
+      "critical": "Kritik",
+      "errors": "Hatalar",
+      "warnings": "Uyarılar",
+      "passed": "Geçti",
+      "notAvailable": "Kullanılamıyor",
+      "coverage": "{total} kontrolden {measured} tanesi ölçülebilir"
+    },
+    "grades": {
+      "poor": "Zayıf",
+      "needs_improvement": "Geliştirme gerekli",
+      "good": "İyi",
+      "very_good": "Çok iyi",
+      "excellent": "Mükemmel",
+      "unavailable": "Kullanılamıyor"
+    },
+    "categories": {
+      "seo": { "name": "SEO" },
+      "performance": { "name": "Performans" },
+      "accessibility": { "name": "Erişilebilirlik" },
+      "security": { "name": "Güvenlik" },
+      "technical": { "name": "Teknik SEO" },
+      "content": { "name": "İçerik" },
+      "social": { "name": "Sosyal" }
+    },
+    "sections": {
+      "scores": "Puan özeti",
+      "recommendations": "Öne çıkan öneriler",
+      "issues": "Tüm sorunlar",
+      "metrics": "Ölçülen metrikler",
+      "social": "Sosyal önizleme"
+    },
+    "charts": {
+      "categoryTitle": "Kategoriye göre puanlar",
+      "distributionTitle": "Kontrol sonuçları",
+      "coverageNote": "Puan yalnızca ölçülebilir kontrolleri içerir; kullanılamayan kontroller puan kazandırmaz."
+    },
+    "filters": {
+      "all": "Tümü",
+      "critical": "Kritik",
+      "errors": "Hatalar",
+      "warnings": "Uyarılar",
+      "passed": "Geçti",
+      "notAvailable": "Kullanılamıyor"
+    },
+    "fields": {
+      "what": "Ne bulduk",
+      "why": "Neden önemli",
+      "fix": "Nasıl düzeltilir",
+      "technical": "Teknik ayrıntılar",
+      "evidence": "Kanıt"
+    },
+    "status": {
+      "pass": "Geçti",
+      "warning": "Uyarı",
+      "fail": "Başarısız",
+      "not_available": "Kullanılamıyor"
+    },
+    "severity": { "critical": "Kritik", "high": "Yüksek", "medium": "Orta", "low": "Düşük" },
+    "measurement": {
+      "measured": "Ölçüldü",
+      "estimated": "Tahmini",
+      "unavailable": "Kullanılamıyor",
+      "requires_api": "Sunucu/API analizi gerekli"
+    },
+    "recommendations": { "empty": "Başarısız kontrol yok — şu anda düzeltecek bir şey yok." },
+    "empty": { "title": "Gösterilecek bir şey yok", "text": "Bu filtreyle sorun bulunamadı." },
+    "notFound": {
+      "title": "Rapor bulunamadı",
+      "text": "Bu rapor bağlantısı bu cihazda kullanılamıyor. Raporlar tarayıcınızda yerel olarak saklanır — yeni bir rapor için denetimi tekrar çalıştırın.",
+      "cta": "Ücretsiz denetim başlat"
+    },
+    "new": { "title": "Sonraki denetime hazır mısınız?", "cta": "Yeni denetim çalıştır" },
+    "share": {
+      "copy": "Rapor bağlantısını kopyala",
+      "copied": "Rapor bağlantısı kopyalandı.",
+      "failed": "Bağlantı kopyalanamadı.",
+      "note": "Bağlantı aynı cihazda açılır: rapor tarayıcınızın yerel deposunda kalır."
+    },
+    "pdf": {
+      "download": "PDF raporu indir",
+      "generating": "PDF oluşturuluyor…",
+      "failed": "PDF oluşturulamadı. Lütfen tekrar deneyin veya raporu yazdırmayı deneyin.",
+      "print": "Raporu yazdır"
+    }
+  },
+  "notFoundPage": {
+    "title": "Sayfa bulunamadı",
+    "text": "Aradığınız sayfa mevcut değil veya taşınmış.",
+    "home": "Ana sayfaya git"
+  },
+  "consent": {
+    "title": "Çerezler ve gizlilik",
+    "text": "Google Analytics ve reklamlar için isteğe bağlı çerezler kullanıyoruz. Denetim aracı bunlar olmadan da sorunsuz çalışır.",
+    "accept": "Kabul et",
+    "reject": "Reddet",
+    "manage": "Tercihleri yönet",
+    "save": "Tercihleri kaydet"
+  },
+  "ads": { "label": "Reklam", "placeholder": "Reklam alanı" },
+  "footer": {
+    "tagline": "Doğru ve dürüst web sitesi denetimleri — ücretsiz ve çok dilli.",
+    "product": "Ürün",
+    "resources": "Kaynaklar",
+    "company": "Şirket",
+    "language": "Dil",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "tools": {
+    "shared": { "runCta": "Ücretsiz denetim başlat" },
+    "seoAudit": "Web sitesi SEO denetimi",
+    "freeSeoAudit": "Ücretsiz SEO denetimi",
+    "performanceTest": "Web sitesi performans testi",
+    "accessibilityChecker": "Erişilebilirlik denetleyicisi",
+    "technicalSeoAudit": "Teknik SEO denetimi",
+    "securityCheck": "Web sitesi güvenlik kontrolü"
+  }
+}

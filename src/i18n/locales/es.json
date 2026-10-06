@@ -1,0 +1,212 @@
+{
+  "common": {
+    "skipToContent": "Ir al contenido principal",
+    "loading": "Cargando…",
+    "close": "Cerrar",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "retry": "Reintentar",
+    "selectLanguage": "Elegir idioma",
+    "expand": "Ver detalles",
+    "collapse": "Ocultar detalles",
+    "notAvailable": "No disponible"
+  },
+  "nav": {
+    "home": "Inicio",
+    "product": "Producto",
+    "tools": "Herramientas",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "cta": "Iniciar auditoría gratuita",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú"
+  },
+  "hero": {
+    "badge": "Gratis · Sin registro",
+    "title": "Auditoría web gratuita",
+    "accent": "para cualquier sitio web",
+    "subtitle": "Analiza el SEO, el rendimiento, la accesibilidad, la seguridad, la salud técnica, el contenido y los metadatos sociales de cualquier sitio — con puntuaciones, gráficos e informes accionables descargables en PDF.",
+    "urlLabel": "URL del sitio web",
+    "placeholder": "https://example.com",
+    "cta": "Iniciar auditoría gratuita",
+    "auditing": "Iniciando auditoría…",
+    "microcopy": "Funciona en tu navegador. Sin cuenta, sin datos personales.",
+    "trust": [
+      "Sin registro",
+      "Auditoría básica gratuita",
+      "Informe PDF descargable",
+      "30 idiomas incluido maithili",
+      "Recomendaciones accionables"
+    ]
+  },
+  "home": {
+    "featuresTitle": "Todo para un sitio más sano",
+    "howTitle": "Cómo funciona",
+    "ctaTitle": "¿Listo para mejorar tu sitio?",
+    "cta": "Iniciar auditoría gratuita"
+  },
+  "audit": {
+    "errorTitle": "No pudimos ejecutar esta auditoría",
+    "runAgain": "Ejecutar auditoría de nuevo",
+    "errors": {
+      "empty_url": "Introduce la URL del sitio que quieres auditar.",
+      "invalid_url": "Esto no parece una URL válida. Prueba con: https://example.com",
+      "unsupported_protocol": "Solo se pueden auditar sitios http:// y https://.",
+      "timeout": "El sitio tardó demasiado en responder. Inténtalo de nuevo.",
+      "network": "No pudimos alcanzar este sitio desde tu navegador. Puede estar fuera de línea o bloqueando la solicitud.",
+      "cors": "No pudimos analizar este sitio directamente desde tu navegador. Algunas comprobaciones requieren acceso del servidor.",
+      "not_found": "La página devolvió «no encontrada» (404). Verifica la URL e inténtalo de nuevo.",
+      "too_large": "Esta página es demasiado grande para analizarse con seguridad en tu navegador.",
+      "blocked": "Este sitio bloqueó la solicitud de análisis.",
+      "api_failed": "La API de auditoría no está disponible en este momento. Inténtalo más tarde.",
+      "unknown": "Algo salió mal al ejecutar la auditoría. Inténtalo de nuevo."
+    }
+  },
+  "progress": {
+    "title": "Tu auditoría está en marcha",
+    "subtitle": "Mantén esta pestaña abierta — el análisis completo se ejecuta en tu navegador.",
+    "percent": "{percent}% completado",
+    "stages": {
+      "validate": "Verificando la URL…",
+      "fetch": "Descargando la página…",
+      "aux": "Buscando robots.txt y sitemap…",
+      "seo": "Analizando SEO…",
+      "performance": "Comprobando indicadores de rendimiento…",
+      "accessibility": "Comprobando accesibilidad…",
+      "security": "Revisando bases de seguridad…",
+      "technical": "Comprobando estructura técnica…",
+      "content": "Analizando contenido…",
+      "social": "Comprobando metadatos sociales…",
+      "generate": "Preparando recomendaciones…",
+      "done": "Informe listo"
+    }
+  },
+  "report": {
+    "title": "Informe de auditoría",
+    "auditedUrl": "URL auditada",
+    "auditedOn": "Fecha de la auditoría",
+    "overall": "Puntuación general",
+    "previousScore": "Puntuación anterior",
+    "firstAudit": "Primera auditoría de esta URL",
+    "summary": {
+      "issues": "Problemas",
+      "critical": "Críticos",
+      "errors": "Errores",
+      "warnings": "Advertencias",
+      "passed": "Aprobados",
+      "notAvailable": "No disponibles",
+      "coverage": "{measured} de {total} comprobaciones medibles"
+    },
+    "grades": {
+      "poor": "Deficiente",
+      "needs_improvement": "Necesita mejorar",
+      "good": "Bueno",
+      "very_good": "Muy bueno",
+      "excellent": "Excelente",
+      "unavailable": "No disponible"
+    },
+    "categories": {
+      "seo": { "name": "SEO" },
+      "performance": { "name": "Rendimiento" },
+      "accessibility": { "name": "Accesibilidad" },
+      "security": { "name": "Seguridad" },
+      "technical": { "name": "SEO técnico" },
+      "content": { "name": "Contenido" },
+      "social": { "name": "Social" }
+    },
+    "sections": {
+      "scores": "Resumen de puntuaciones",
+      "recommendations": "Recomendaciones principales",
+      "issues": "Todos los problemas",
+      "metrics": "Métricas medidas",
+      "social": "Vista social"
+    },
+    "charts": {
+      "categoryTitle": "Puntuaciones por categoría",
+      "distributionTitle": "Resultados de comprobaciones",
+      "coverageNote": "La puntuación solo incluye comprobaciones medibles; las no disponibles no otorgan puntos."
+    },
+    "filters": {
+      "all": "Todas",
+      "critical": "Críticos",
+      "errors": "Errores",
+      "warnings": "Advertencias",
+      "passed": "Aprobados",
+      "notAvailable": "No disponibles"
+    },
+    "fields": {
+      "what": "Qué encontramos",
+      "why": "Por qué es importante",
+      "fix": "Cómo solucionarlo",
+      "technical": "Detalles técnicos",
+      "evidence": "Evidencia"
+    },
+    "status": {
+      "pass": "Aprobado",
+      "warning": "Advertencia",
+      "fail": "Fallo",
+      "not_available": "No disponible"
+    },
+    "severity": { "critical": "Crítica", "high": "Alta", "medium": "Media", "low": "Baja" },
+    "measurement": {
+      "measured": "Medido",
+      "estimated": "Estimado",
+      "unavailable": "No disponible",
+      "requires_api": "Requiere análisis de servidor/API"
+    },
+    "recommendations": { "empty": "No hay comprobaciones fallidas — nada que corregir por ahora." },
+    "empty": {
+      "title": "Nada que mostrar",
+      "text": "No se encontraron problemas con este filtro."
+    },
+    "notFound": {
+      "title": "Informe no encontrado",
+      "text": "Este enlace de informe no está disponible en este dispositivo. Los informes se guardan localmente en tu navegador — vuelve a ejecutar la auditoría para un informe nuevo.",
+      "cta": "Iniciar auditoría gratuita"
+    },
+    "new": { "title": "¿Listo para la próxima auditoría?", "cta": "Ejecutar nueva auditoría" },
+    "share": {
+      "copy": "Copiar enlace del informe",
+      "copied": "Enlace del informe copiado.",
+      "failed": "No se pudo copiar el enlace.",
+      "note": "El enlace se abre en este dispositivo: el informe permanece en el almacenamiento local de tu navegador."
+    },
+    "pdf": {
+      "download": "Descargar informe PDF",
+      "generating": "Generando PDF…",
+      "failed": "No se pudo generar el PDF. Inténtalo de nuevo o prueba a imprimir el informe.",
+      "print": "Imprimir informe"
+    }
+  },
+  "notFoundPage": {
+    "title": "Página no encontrada",
+    "text": "La página que buscas no existe o se ha movido.",
+    "home": "Ir a la página de inicio"
+  },
+  "consent": {
+    "title": "Cookies y privacidad",
+    "text": "Usamos cookies opcionales para Google Analytics y anuncios. La herramienta de auditoría funciona perfectamente sin ellas.",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "manage": "Gestionar preferencias",
+    "save": "Guardar preferencias"
+  },
+  "ads": { "label": "Anuncio", "placeholder": "Espacio publicitario" },
+  "footer": {
+    "tagline": "Auditorías web precisas y honestas — gratuitas y multilingües.",
+    "product": "Producto",
+    "resources": "Recursos",
+    "company": "Empresa",
+    "language": "Idioma",
+    "rights": "Todos los derechos reservados."
+  },
+  "tools": {
+    "shared": { "runCta": "Iniciar auditoría gratuita" },
+    "seoAudit": "Auditoría SEO web",
+    "freeSeoAudit": "Auditoría SEO gratuita",
+    "performanceTest": "Test de rendimiento web",
+    "accessibilityChecker": "Verificador de accesibilidad",
+    "technicalSeoAudit": "Auditoría SEO técnica",
+    "securityCheck": "Comprobación de seguridad web"
+  }
+}

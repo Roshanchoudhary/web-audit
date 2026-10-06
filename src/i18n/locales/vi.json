@@ -1,0 +1,219 @@
+{
+  "common": {
+    "skipToContent": "Chuyển đến nội dung chính",
+    "loading": "Đang tải…",
+    "close": "Đóng",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép!",
+    "retry": "Thử lại",
+    "selectLanguage": "Chọn ngôn ngữ",
+    "expand": "Xem chi tiết",
+    "collapse": "Ẩn chi tiết",
+    "notAvailable": "Không khả dụng"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "product": "Sản phẩm",
+    "tools": "Công cụ",
+    "about": "Về chúng tôi",
+    "contact": "Liên hệ",
+    "cta": "Chạy kiểm toán miễn phí",
+    "menuOpen": "Mở menu",
+    "menuClose": "Đóng menu"
+  },
+  "hero": {
+    "badge": "Miễn phí · Không cần đăng ký",
+    "title": "Kiểm toán website miễn phí",
+    "accent": "cho mọi website",
+    "subtitle": "Phân tích SEO, hiệu năng, khả năng truy cập, bảo mật, sức khỏe kỹ thuật, nội dung và siêu dữ liệu mạng xã hội của mọi website — nhận điểm số, biểu đồ và báo cáo có thể hành động, tải xuống được dạng PDF.",
+    "urlLabel": "URL website",
+    "placeholder": "https://example.com",
+    "cta": "Chạy kiểm toán miễn phí",
+    "auditing": "Bắt đầu kiểm toán…",
+    "microcopy": "Chạy trong trình duyệt của bạn. Không tài khoản, không dữ liệu cá nhân.",
+    "trust": [
+      "Không cần đăng ký",
+      "Kiểm toán cơ bản miễn phí",
+      "Tải báo cáo PDF",
+      "30 ngôn ngữ gồm Maithili",
+      "Khuyến nghị có thể hành động"
+    ]
+  },
+  "home": {
+    "featuresTitle": "Mọi thứ cho website khỏe mạnh hơn",
+    "howTitle": "Cách hoạt động",
+    "ctaTitle": "Sẵn sàng cải thiện website của bạn?",
+    "cta": "Chạy kiểm toán miễn phí"
+  },
+  "audit": {
+    "errorTitle": "Chúng tôi không thể chạy kiểm toán này",
+    "runAgain": "Chạy lại kiểm toán",
+    "errors": {
+      "empty_url": "Vui lòng nhập URL website cần kiểm toán.",
+      "invalid_url": "Đây có vẻ không phải URL hợp lệ. Hãy thử: https://example.com",
+      "unsupported_protocol": "Chỉ có thể kiểm toán website http:// và https://.",
+      "timeout": "Website phản hồi quá lâu. Vui lòng thử lại.",
+      "network": "Chúng tôi không thể truy cập website này từ trình duyệt của bạn. Website có thể đang ngoại tuyến hoặc chặn yêu cầu.",
+      "cors": "Chúng tôi không thể phân tích website này trực tiếp từ trình duyệt. Một số kiểm tra cần quyền truy cập phía máy chủ.",
+      "not_found": "Trang trả về «không tìm thấy» (404). Hãy kiểm tra URL và thử lại.",
+      "too_large": "Trang này quá lớn để phân tích an toàn trong trình duyệt của bạn.",
+      "blocked": "Website này đã chặn yêu cầu phân tích.",
+      "api_failed": "API kiểm toán hiện không khả dụng. Vui lòng thử lại sau.",
+      "unknown": "Đã xảy ra lỗi khi chạy kiểm toán. Vui lòng thử lại."
+    }
+  },
+  "progress": {
+    "title": "Kiểm toán của bạn đang chạy",
+    "subtitle": "Giữ tab này mở — phân tích hoàn chỉnh chạy trong trình duyệt của bạn.",
+    "percent": "Hoàn thành {percent}%",
+    "stages": {
+      "validate": "Đang xác minh URL…",
+      "fetch": "Đang tải trang…",
+      "aux": "Đang tìm robots.txt và sitemap…",
+      "seo": "Đang phân tích SEO…",
+      "performance": "Đang kiểm tra chỉ số hiệu năng…",
+      "accessibility": "Đang kiểm tra khả năng truy cập…",
+      "security": "Đang rà soát nền tảng bảo mật…",
+      "technical": "Đang kiểm tra cấu trúc kỹ thuật…",
+      "content": "Đang phân tích nội dung…",
+      "social": "Đang kiểm tra siêu dữ liệu mạng xã hội…",
+      "generate": "Đang chuẩn bị khuyến nghị…",
+      "done": "Báo cáo sẵn sàng"
+    }
+  },
+  "report": {
+    "title": "Báo cáo kiểm toán",
+    "auditedUrl": "URL đã kiểm toán",
+    "auditedOn": "Ngày kiểm toán",
+    "overall": "Tổng điểm",
+    "previousScore": "Điểm trước đó",
+    "firstAudit": "Lần kiểm toán đầu tiên của URL này",
+    "summary": {
+      "issues": "Vấn đề",
+      "critical": "Nghiêm trọng",
+      "errors": "Lỗi",
+      "warnings": "Cảnh báo",
+      "passed": "Đạt",
+      "notAvailable": "Không khả dụng",
+      "coverage": "{measured}/{total} kiểm tra có thể đo lường"
+    },
+    "grades": {
+      "poor": "Kém",
+      "needs_improvement": "Cần cải thiện",
+      "good": "Tốt",
+      "very_good": "Rất tốt",
+      "excellent": "Xuất sắc",
+      "unavailable": "Không khả dụng"
+    },
+    "categories": {
+      "seo": { "name": "SEO" },
+      "performance": { "name": "Hiệu năng" },
+      "accessibility": { "name": "Khả năng truy cập" },
+      "security": { "name": "Bảo mật" },
+      "technical": { "name": "SEO kỹ thuật" },
+      "content": { "name": "Nội dung" },
+      "social": { "name": "Mạng xã hội" }
+    },
+    "sections": {
+      "scores": "Tổng quan điểm số",
+      "recommendations": "Khuyến nghị hàng đầu",
+      "issues": "Tất cả vấn đề",
+      "metrics": "Chỉ số đã đo",
+      "social": "Xem trước mạng xã hội"
+    },
+    "charts": {
+      "categoryTitle": "Điểm theo danh mục",
+      "distributionTitle": "Kết quả kiểm tra",
+      "coverageNote": "Điểm số chỉ bao gồm các kiểm tra đo lường được; kiểm tra không khả dụng không được tính điểm."
+    },
+    "filters": {
+      "all": "Tất cả",
+      "critical": "Nghiêm trọng",
+      "errors": "Lỗi",
+      "warnings": "Cảnh báo",
+      "passed": "Đạt",
+      "notAvailable": "Không khả dụng"
+    },
+    "fields": {
+      "what": "Chúng tôi tìm thấy gì",
+      "why": "Vì sao điều này quan trọng",
+      "fix": "Cách khắc phục",
+      "technical": "Chi tiết kỹ thuật",
+      "evidence": "Bằng chứng"
+    },
+    "status": {
+      "pass": "Đạt",
+      "warning": "Cảnh báo",
+      "fail": "Không đạt",
+      "not_available": "Không khả dụng"
+    },
+    "severity": {
+      "critical": "Nghiêm trọng",
+      "high": "Cao",
+      "medium": "Trung bình",
+      "low": "Thấp"
+    },
+    "measurement": {
+      "measured": "Đo lường",
+      "estimated": "Ước tính",
+      "unavailable": "Không khả dụng",
+      "requires_api": "Cần phân tích máy chủ/API"
+    },
+    "recommendations": {
+      "empty": "Không có kiểm tra nào thất bại — hiện chưa có gì cần khắc phục."
+    },
+    "empty": {
+      "title": "Không có gì để hiển thị",
+      "text": "Không tìm thấy vấn đề với bộ lọc này."
+    },
+    "notFound": {
+      "title": "Không tìm thấy báo cáo",
+      "text": "Liên kết báo cáo này không có sẵn trên thiết bị này. Báo cáo được lưu cục bộ trong trình duyệt — chạy lại kiểm toán để có báo cáo mới.",
+      "cta": "Chạy kiểm toán miễn phí"
+    },
+    "new": { "title": "Sẵn sàng cho lần kiểm toán tiếp theo?", "cta": "Chạy kiểm toán mới" },
+    "share": {
+      "copy": "Sao chép liên kết báo cáo",
+      "copied": "Đã sao chép liên kết báo cáo.",
+      "failed": "Không thể sao chép liên kết.",
+      "note": "Liên kết mở trên chính thiết bị này: báo cáo nằm trong bộ nhớ cục bộ của trình duyệt."
+    },
+    "pdf": {
+      "download": "Tải báo cáo PDF",
+      "generating": "Đang tạo PDF…",
+      "failed": "Tạo PDF thất bại. Vui lòng thử lại hoặc in báo cáo.",
+      "print": "In báo cáo"
+    }
+  },
+  "notFoundPage": {
+    "title": "Không tìm thấy trang",
+    "text": "Trang bạn tìm không tồn tại hoặc đã được di chuyển.",
+    "home": "Về trang chủ"
+  },
+  "consent": {
+    "title": "Cookie và quyền riêng tư",
+    "text": "Chúng tôi dùng cookie tùy chọn cho Google Analytics và quảng cáo. Công cụ kiểm toán vẫn hoạt động đầy đủ dù không có chúng.",
+    "accept": "Chấp nhận",
+    "reject": "Từ chối",
+    "manage": "Quản lý tùy chọn",
+    "save": "Lưu tùy chọn"
+  },
+  "ads": { "label": "Quảng cáo", "placeholder": "Vị trí quảng cáo" },
+  "footer": {
+    "tagline": "Kiểm toán website chính xác, trung thực — miễn phí, đa ngôn ngữ.",
+    "product": "Sản phẩm",
+    "resources": "Tài nguyên",
+    "company": "Công ty",
+    "language": "Ngôn ngữ",
+    "rights": "Mọi quyền được bảo lưu."
+  },
+  "tools": {
+    "shared": { "runCta": "Chạy kiểm toán miễn phí" },
+    "seoAudit": "Kiểm toán SEO website",
+    "freeSeoAudit": "Kiểm toán SEO miễn phí",
+    "performanceTest": "Kiểm thử hiệu năng website",
+    "accessibilityChecker": "Trình kiểm khả năng truy cập",
+    "technicalSeoAudit": "Kiểm toán SEO kỹ thuật",
+    "securityCheck": "Kiểm tra bảo mật website"
+  }
+}

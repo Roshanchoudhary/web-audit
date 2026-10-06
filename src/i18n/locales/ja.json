@@ -1,0 +1,207 @@
+{
+  "common": {
+    "skipToContent": "メインコンテンツへ移動",
+    "loading": "読み込み中…",
+    "close": "閉じる",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "retry": "再試行",
+    "selectLanguage": "言語を選択",
+    "expand": "詳細を表示",
+    "collapse": "詳細を非表示",
+    "notAvailable": "利用不可"
+  },
+  "nav": {
+    "home": "ホーム",
+    "product": "製品",
+    "tools": "ツール",
+    "about": "私たちについて",
+    "contact": "お問い合わせ",
+    "cta": "無料監査を開始",
+    "menuOpen": "メニューを開く",
+    "menuClose": "メニューを閉じる"
+  },
+  "hero": {
+    "badge": "無料 · 登録不要",
+    "title": "無料ウェブサイト監査",
+    "accent": "あらゆるウェブサイトに対応",
+    "subtitle": "あらゆるサイトの SEO、パフォーマンス、アクセシビリティ、セキュリティ、技術的健全性、コンテンツ、ソーシャルメタデータを分析。スコア、チャート、実行可能なレポートを取得し、PDF でダウンロードもできます。",
+    "urlLabel": "ウェブサイトの URL",
+    "placeholder": "https://example.com",
+    "cta": "無料監査を開始",
+    "auditing": "監査を開始しています…",
+    "microcopy": "ブラウザー内で動作。アカウント不要、個人データも収集しません。",
+    "trust": [
+      "登録不要",
+      "無料の基本監査",
+      "PDF レポートをダウンロード",
+      "マイティリ語を含む 30 言語",
+      "実行可能な改善提案"
+    ]
+  },
+  "home": {
+    "featuresTitle": "より健全なサイトに必要なすべて",
+    "howTitle": "仕組み",
+    "ctaTitle": "サイトの改善準備はできましたか？",
+    "cta": "無料監査を開始"
+  },
+  "audit": {
+    "errorTitle": "この監査を実行できませんでした",
+    "runAgain": "監査を再実行",
+    "errors": {
+      "empty_url": "監査するウェブサイトの URL を入力してください。",
+      "invalid_url": "有効な URL ではないようです。次のように入力してください: https://example.com",
+      "unsupported_protocol": "http:// および https:// のサイトのみ監査できます。",
+      "timeout": "サイトの応答に時間がかかりすぎました。再試行してください。",
+      "network": "ブラウザーからこのサイトに到達できませんでした。オフラインか、リクエストをブロックしている可能性があります。",
+      "cors": "ブラウザーからこのサイトを直接分析できませんでした。一部のチェックにはサーバーサイドのアクセスが必要です。",
+      "not_found": "ページが「見つかりません」(404) を返しました。URL を確認して再試行してください。",
+      "too_large": "このページは大きすぎて、ブラウザーで安全に分析できません。",
+      "blocked": "このサイトが分析リクエストをブロックしました。",
+      "api_failed": "監査 API は現在利用できません。しばらくしてから再試行してください。",
+      "unknown": "監査の実行中に問題が発生しました。再試行してください。"
+    }
+  },
+  "progress": {
+    "title": "監査を実行中です",
+    "subtitle": "このタブを開いたままにしてください — 完全な分析はブラウザー内で実行されます。",
+    "percent": "{percent}% 完了",
+    "stages": {
+      "validate": "URL を確認しています…",
+      "fetch": "ページをダウンロードしています…",
+      "aux": "robots.txt とサイトマップを検索しています…",
+      "seo": "SEO を分析しています…",
+      "performance": "パフォーマンス指標を確認しています…",
+      "accessibility": "アクセシビリティを確認しています…",
+      "security": "セキュリティの基礎を確認しています…",
+      "technical": "技術的な構造を確認しています…",
+      "content": "コンテンツを分析しています…",
+      "social": "ソーシャルメタデータを確認しています…",
+      "generate": "提案を準備しています…",
+      "done": "レポートの準備ができました"
+    }
+  },
+  "report": {
+    "title": "監査レポート",
+    "auditedUrl": "監査した URL",
+    "auditedOn": "監査日",
+    "overall": "総合スコア",
+    "previousScore": "前回のスコア",
+    "firstAudit": "この URL の初回監査",
+    "summary": {
+      "issues": "問題",
+      "critical": "重大",
+      "errors": "エラー",
+      "warnings": "警告",
+      "passed": "合格",
+      "notAvailable": "利用不可",
+      "coverage": "{total} 件中 {measured} 件のチェックを測定可能"
+    },
+    "grades": {
+      "poor": "悪い",
+      "needs_improvement": "改善が必要",
+      "good": "良い",
+      "very_good": "とても良い",
+      "excellent": "優秀",
+      "unavailable": "利用不可"
+    },
+    "categories": {
+      "seo": { "name": "SEO" },
+      "performance": { "name": "パフォーマンス" },
+      "accessibility": { "name": "アクセシビリティ" },
+      "security": { "name": "セキュリティ" },
+      "technical": { "name": "テクニカル SEO" },
+      "content": { "name": "コンテンツ" },
+      "social": { "name": "ソーシャル" }
+    },
+    "sections": {
+      "scores": "スコア概要",
+      "recommendations": "主要な改善提案",
+      "issues": "すべての問題",
+      "metrics": "測定指標",
+      "social": "ソーシャルプレビュー"
+    },
+    "charts": {
+      "categoryTitle": "カテゴリ別スコア",
+      "distributionTitle": "チェック結果",
+      "coverageNote": "スコアには測定可能なチェックのみが含まれ、利用不可のチェックは加点されません。"
+    },
+    "filters": {
+      "all": "すべて",
+      "critical": "重大",
+      "errors": "エラー",
+      "warnings": "警告",
+      "passed": "合格",
+      "notAvailable": "利用不可"
+    },
+    "fields": {
+      "what": "わかったこと",
+      "why": "なぜ重要なのか",
+      "fix": "修正方法",
+      "technical": "技術的な詳細",
+      "evidence": "根拠"
+    },
+    "status": { "pass": "合格", "warning": "警告", "fail": "不合格", "not_available": "利用不可" },
+    "severity": { "critical": "重大", "high": "高", "medium": "中", "low": "低" },
+    "measurement": {
+      "measured": "実測",
+      "estimated": "推定",
+      "unavailable": "利用不可",
+      "requires_api": "サーバー/API での分析が必要"
+    },
+    "recommendations": { "empty": "不合格のチェックはありません — 現時点で修正点はありません。" },
+    "empty": {
+      "title": "表示する内容がありません",
+      "text": "このフィルターで問題は見つかりませんでした。"
+    },
+    "notFound": {
+      "title": "レポートが見つかりません",
+      "text": "このレポートリンクはこのデバイスでは利用できません。レポートはブラウザーのローカルストレージに保存されます — 新しいレポートのために監査を再実行してください。",
+      "cta": "無料監査を開始"
+    },
+    "new": { "title": "次の監査の準備はできましたか？", "cta": "新しい監査を実行" },
+    "share": {
+      "copy": "レポートリンクをコピー",
+      "copied": "レポートリンクをコピーしました。",
+      "failed": "リンクをコピーできませんでした。",
+      "note": "リンクはこのデバイスでのみ開きます。レポートはブラウザーのローカルストレージに保存されます。"
+    },
+    "pdf": {
+      "download": "PDF レポートをダウンロード",
+      "generating": "PDF を生成しています…",
+      "failed": "PDF の生成に失敗しました。再試行するか、レポートの印刷をお試しください。",
+      "print": "レポートを印刷"
+    }
+  },
+  "notFoundPage": {
+    "title": "ページが見つかりません",
+    "text": "お探しのページは存在しないか、移動しました。",
+    "home": "ホームへ戻る"
+  },
+  "consent": {
+    "title": "Cookie とプライバシー",
+    "text": "Google Analytics と広告のためにオプションの Cookie を使用します。監査ツールはそれなしでも完全に動作します。",
+    "accept": "同意する",
+    "reject": "拒否する",
+    "manage": "設定を管理",
+    "save": "設定を保存"
+  },
+  "ads": { "label": "広告", "placeholder": "広告スペース" },
+  "footer": {
+    "tagline": "正確で誠実なウェブサイト監査 — 無料・多言語対応。",
+    "product": "製品",
+    "resources": "リソース",
+    "company": "会社",
+    "language": "言語",
+    "rights": "すべての権利を保有します。"
+  },
+  "tools": {
+    "shared": { "runCta": "無料監査を開始" },
+    "seoAudit": "ウェブサイト SEO 監査",
+    "freeSeoAudit": "無料 SEO 監査",
+    "performanceTest": "ウェブサイトパフォーマンステスト",
+    "accessibilityChecker": "アクセシビリティチェッカー",
+    "technicalSeoAudit": "テクニカル SEO 監査",
+    "securityCheck": "ウェブサイトセキュリティチェック"
+  }
+}

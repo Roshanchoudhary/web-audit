@@ -1,0 +1,212 @@
+{
+  "common": {
+    "skipToContent": "Vai al contenuto principale",
+    "loading": "Caricamento…",
+    "close": "Chiudi",
+    "copy": "Copia",
+    "copied": "Copiato!",
+    "retry": "Riprova",
+    "selectLanguage": "Scegli la lingua",
+    "expand": "Mostra dettagli",
+    "collapse": "Nascondi dettagli",
+    "notAvailable": "Non disponibile"
+  },
+  "nav": {
+    "home": "Home",
+    "product": "Prodotto",
+    "tools": "Strumenti",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "cta": "Avvia audit gratuito",
+    "menuOpen": "Apri menu",
+    "menuClose": "Chiudi menu"
+  },
+  "hero": {
+    "badge": "Gratuito · Senza registrazione",
+    "title": "Audit sito web gratuito",
+    "accent": "per qualsiasi sito",
+    "subtitle": "Analizza SEO, prestazioni, accessibilità, sicurezza, salute tecnica, contenuti e metadati social di qualsiasi sito — con punteggi, grafici e report azionabili scaricabili in PDF.",
+    "urlLabel": "URL del sito web",
+    "placeholder": "https://example.com",
+    "cta": "Avvia audit gratuito",
+    "auditing": "Avvio dell'audit…",
+    "microcopy": "Funziona nel tuo browser. Nessun account, nessun dato personale.",
+    "trust": [
+      "Senza registrazione",
+      "Audit base gratuito",
+      "Report PDF scaricabile",
+      "30 lingue incluso il maithili",
+      "Raccomandazioni azionabili"
+    ]
+  },
+  "home": {
+    "featuresTitle": "Tutto per un sito più sano",
+    "howTitle": "Come funziona",
+    "ctaTitle": "Pronto a migliorare il tuo sito?",
+    "cta": "Avvia audit gratuito"
+  },
+  "audit": {
+    "errorTitle": "Non riusciamo a eseguire questo audit",
+    "runAgain": "Riesegui audit",
+    "errors": {
+      "empty_url": "Inserisci l'URL del sito da auditare.",
+      "invalid_url": "Non sembra un URL valido. Prova: https://example.com",
+      "unsupported_protocol": "Solo i siti http:// e https:// possono essere auditati.",
+      "timeout": "Il sito ha impiegato troppo tempo a rispondere. Riprova.",
+      "network": "Non riusciamo a raggiungere questo sito dal tuo browser. Potrebbe essere offline o bloccare la richiesta.",
+      "cors": "Non riusciamo ad analizzare questo sito direttamente dal tuo browser. Alcuni controlli richiedono accesso lato server.",
+      "not_found": "La pagina ha restituito «non trovata» (404). Controlla l'URL e riprova.",
+      "too_large": "Questa pagina è troppo grande per essere analizzata in sicurezza nel tuo browser.",
+      "blocked": "Questo sito ha bloccato la richiesta di analisi.",
+      "api_failed": "L'API di audit non è al momento disponibile. Riprova più tardi.",
+      "unknown": "Qualcosa è andato storto durante l'audit. Riprova."
+    }
+  },
+  "progress": {
+    "title": "Il tuo audit è in corso",
+    "subtitle": "Tieni questa scheda aperta — l'analisi completa gira nel tuo browser.",
+    "percent": "{percent}% completato",
+    "stages": {
+      "validate": "Verifica dell'URL…",
+      "fetch": "Download della pagina…",
+      "aux": "Ricerca di robots.txt e sitemap…",
+      "seo": "Analisi SEO…",
+      "performance": "Controllo degli indicatori di prestazione…",
+      "accessibility": "Controllo dell'accessibilità…",
+      "security": "Revisione delle basi di sicurezza…",
+      "technical": "Controllo della struttura tecnica…",
+      "content": "Analisi dei contenuti…",
+      "social": "Controllo dei metadati social…",
+      "generate": "Preparazione dei consigli…",
+      "done": "Report pronto"
+    }
+  },
+  "report": {
+    "title": "Report di audit",
+    "auditedUrl": "URL auditato",
+    "auditedOn": "Data dell'audit",
+    "overall": "Punteggio complessivo",
+    "previousScore": "Punteggio precedente",
+    "firstAudit": "Primo audit di questo URL",
+    "summary": {
+      "issues": "Problemi",
+      "critical": "Critici",
+      "errors": "Errori",
+      "warnings": "Avvisi",
+      "passed": "Superati",
+      "notAvailable": "Non disponibili",
+      "coverage": "{measured} controlli misurabili su {total}"
+    },
+    "grades": {
+      "poor": "Scarso",
+      "needs_improvement": "Da migliorare",
+      "good": "Buono",
+      "very_good": "Molto buono",
+      "excellent": "Eccellente",
+      "unavailable": "Non disponibile"
+    },
+    "categories": {
+      "seo": { "name": "SEO" },
+      "performance": { "name": "Prestazioni" },
+      "accessibility": { "name": "Accessibilità" },
+      "security": { "name": "Sicurezza" },
+      "technical": { "name": "SEO tecnico" },
+      "content": { "name": "Contenuto" },
+      "social": { "name": "Social" }
+    },
+    "sections": {
+      "scores": "Panoramica dei punteggi",
+      "recommendations": "Raccomandazioni principali",
+      "issues": "Tutti i problemi",
+      "metrics": "Metriche misurate",
+      "social": "Anteprima social"
+    },
+    "charts": {
+      "categoryTitle": "Punteggi per categoria",
+      "distributionTitle": "Esiti dei controlli",
+      "coverageNote": "Il punteggio include solo i controlli misurabili; quelli non disponibili non assegnano punti."
+    },
+    "filters": {
+      "all": "Tutti",
+      "critical": "Critici",
+      "errors": "Errori",
+      "warnings": "Avvisi",
+      "passed": "Superati",
+      "notAvailable": "Non disponibili"
+    },
+    "fields": {
+      "what": "Cosa abbiamo trovato",
+      "why": "Perché è importante",
+      "fix": "Come risolverlo",
+      "technical": "Dettagli tecnici",
+      "evidence": "Prova"
+    },
+    "status": {
+      "pass": "Superato",
+      "warning": "Avviso",
+      "fail": "Fallito",
+      "not_available": "Non disponibile"
+    },
+    "severity": { "critical": "Critica", "high": "Alta", "medium": "Media", "low": "Bassa" },
+    "measurement": {
+      "measured": "Misurato",
+      "estimated": "Stimato",
+      "unavailable": "Non disponibile",
+      "requires_api": "Richiede analisi server/API"
+    },
+    "recommendations": { "empty": "Nessun controllo fallito — niente da sistemare per ora." },
+    "empty": {
+      "title": "Niente da mostrare",
+      "text": "Nessun problema trovato con questo filtro."
+    },
+    "notFound": {
+      "title": "Report non trovato",
+      "text": "Questo link del report non è disponibile su questo dispositivo. I report sono salvati localmente nel browser — riesegui l'audit per un nuovo report.",
+      "cta": "Avvia audit gratuito"
+    },
+    "new": { "title": "Pronto per il prossimo audit?", "cta": "Esegui un nuovo audit" },
+    "share": {
+      "copy": "Copia link del report",
+      "copied": "Link del report copiato.",
+      "failed": "Impossibile copiare il link.",
+      "note": "Il link si apre su questo stesso dispositivo: il report resta nello storage locale del browser."
+    },
+    "pdf": {
+      "download": "Scarica report PDF",
+      "generating": "Generazione PDF…",
+      "failed": "Generazione del PDF non riuscita. Riprova o prova a stampare il report.",
+      "print": "Stampa report"
+    }
+  },
+  "notFoundPage": {
+    "title": "Pagina non trovata",
+    "text": "La pagina che cerchi non esiste o è stata spostata.",
+    "home": "Vai alla home"
+  },
+  "consent": {
+    "title": "Cookie e privacy",
+    "text": "Usiamo cookie opzionali per Google Analytics e pubblicità. Lo strumento di audit funziona perfettamente anche senza.",
+    "accept": "Accetta",
+    "reject": "Rifiuta",
+    "manage": "Gestisci preferenze",
+    "save": "Salva preferenze"
+  },
+  "ads": { "label": "Pubblicità", "placeholder": "Spazio pubblicitario" },
+  "footer": {
+    "tagline": "Audit siti precisi e onesti — gratuiti e multilingua.",
+    "product": "Prodotto",
+    "resources": "Risorse",
+    "company": "Azienda",
+    "language": "Lingua",
+    "rights": "Tutti i diritti riservati."
+  },
+  "tools": {
+    "shared": { "runCta": "Avvia audit gratuito" },
+    "seoAudit": "Audit SEO sito web",
+    "freeSeoAudit": "Audit SEO gratuito",
+    "performanceTest": "Test prestazioni sito",
+    "accessibilityChecker": "Verificatore di accessibilità",
+    "technicalSeoAudit": "Audit SEO tecnico",
+    "securityCheck": "Controllo sicurezza sito"
+  }
+}

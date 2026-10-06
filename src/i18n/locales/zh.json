@@ -1,0 +1,204 @@
+{
+  "common": {
+    "skipToContent": "跳转到主要内容",
+    "loading": "加载中…",
+    "close": "关闭",
+    "copy": "复制",
+    "copied": "已复制！",
+    "retry": "重试",
+    "selectLanguage": "选择语言",
+    "expand": "查看详情",
+    "collapse": "隐藏详情",
+    "notAvailable": "不可用"
+  },
+  "nav": {
+    "home": "首页",
+    "product": "产品",
+    "tools": "工具",
+    "about": "关于我们",
+    "contact": "联系",
+    "cta": "开始免费审计",
+    "menuOpen": "打开菜单",
+    "menuClose": "关闭菜单"
+  },
+  "hero": {
+    "badge": "免费 · 无需注册",
+    "title": "免费网站审计",
+    "accent": "适用于任何网站",
+    "subtitle": "分析任何网站的 SEO、性能、可访问性、安全性、技术健康度、内容和社交元数据 — 获取评分、图表和可执行的报告，并可下载为 PDF。",
+    "urlLabel": "网站 URL",
+    "placeholder": "https://example.com",
+    "cta": "开始免费审计",
+    "auditing": "正在开始审计…",
+    "microcopy": "在您的浏览器中运行。无需账户，不收集个人数据。",
+    "trust": [
+      "无需注册",
+      "免费基础审计",
+      "下载 PDF 报告",
+      "30 种语言，含迈蒂利语",
+      "可执行的优化建议"
+    ]
+  },
+  "home": {
+    "featuresTitle": "打造更健康网站所需的一切",
+    "howTitle": "工作原理",
+    "ctaTitle": "准备好优化您的网站了吗？",
+    "cta": "开始免费审计"
+  },
+  "audit": {
+    "errorTitle": "我们无法运行此审计",
+    "runAgain": "重新运行审计",
+    "errors": {
+      "empty_url": "请输入要审计的网站 URL。",
+      "invalid_url": "这似乎不是有效的 URL。请尝试输入：https://example.com",
+      "unsupported_protocol": "仅支持审计 http:// 和 https:// 网站。",
+      "timeout": "网站响应时间过长，请重试。",
+      "network": "我们无法从您的浏览器访问该网站。它可能已离线或正在拦截请求。",
+      "cors": "我们无法直接从您的浏览器分析该网站。某些检查需要服务器端访问权限。",
+      "not_found": "页面返回“未找到”(404)。请检查 URL 后重试。",
+      "too_large": "该页面过大，无法在您的浏览器中安全分析。",
+      "blocked": "该网站拦截了分析请求。",
+      "api_failed": "审计 API 暂不可用，请稍后重试。",
+      "unknown": "运行审计时出错，请重试。"
+    }
+  },
+  "progress": {
+    "title": "您的审计正在进行中",
+    "subtitle": "请保持此标签页打开 — 完整分析在您的浏览器中运行。",
+    "percent": "已完成 {percent}%",
+    "stages": {
+      "validate": "正在验证 URL…",
+      "fetch": "正在下载页面…",
+      "aux": "正在查找 robots.txt 和站点地图…",
+      "seo": "正在分析 SEO…",
+      "performance": "正在检查性能指标…",
+      "accessibility": "正在检查可访问性…",
+      "security": "正在审查安全基础…",
+      "technical": "正在检查技术结构…",
+      "content": "正在分析内容…",
+      "social": "正在检查社交元数据…",
+      "generate": "正在生成建议…",
+      "done": "报告已就绪"
+    }
+  },
+  "report": {
+    "title": "审计报告",
+    "auditedUrl": "已审计的 URL",
+    "auditedOn": "审计日期",
+    "overall": "总分",
+    "previousScore": "上次得分",
+    "firstAudit": "该 URL 的首次审计",
+    "summary": {
+      "issues": "问题",
+      "critical": "严重",
+      "errors": "错误",
+      "warnings": "警告",
+      "passed": "通过",
+      "notAvailable": "不可用",
+      "coverage": "{total} 项检查中有 {measured} 项可测量"
+    },
+    "grades": {
+      "poor": "较差",
+      "needs_improvement": "需要改进",
+      "good": "良好",
+      "very_good": "很好",
+      "excellent": "优秀",
+      "unavailable": "不可用"
+    },
+    "categories": {
+      "seo": { "name": "SEO" },
+      "performance": { "name": "性能" },
+      "accessibility": { "name": "可访问性" },
+      "security": { "name": "安全性" },
+      "technical": { "name": "技术 SEO" },
+      "content": { "name": "内容" },
+      "social": { "name": "社交" }
+    },
+    "sections": {
+      "scores": "评分概览",
+      "recommendations": "重点建议",
+      "issues": "全部问题",
+      "metrics": "测量指标",
+      "social": "社交预览"
+    },
+    "charts": {
+      "categoryTitle": "分类评分",
+      "distributionTitle": "检查结果",
+      "coverageNote": "评分仅包含可测量的检查项；不可用的检查项不计分。"
+    },
+    "filters": {
+      "all": "全部",
+      "critical": "严重",
+      "errors": "错误",
+      "warnings": "警告",
+      "passed": "通过",
+      "notAvailable": "不可用"
+    },
+    "fields": {
+      "what": "我们发现了什么",
+      "why": "为什么这很重要",
+      "fix": "如何修复",
+      "technical": "技术细节",
+      "evidence": "证据"
+    },
+    "status": { "pass": "通过", "warning": "警告", "fail": "未通过", "not_available": "不可用" },
+    "severity": { "critical": "严重", "high": "高", "medium": "中", "low": "低" },
+    "measurement": {
+      "measured": "实测",
+      "estimated": "估算",
+      "unavailable": "不可用",
+      "requires_api": "需要服务器/API 分析"
+    },
+    "recommendations": { "empty": "没有未通过的检查项 — 目前无需修复。" },
+    "empty": { "title": "没有可显示的内容", "text": "此筛选条件下未发现问题。" },
+    "notFound": {
+      "title": "未找到报告",
+      "text": "此报告链接在该设备上不可用。报告保存在您的浏览器本地存储中 — 重新运行审计即可生成新报告。",
+      "cta": "开始免费审计"
+    },
+    "new": { "title": "准备好进行下一次审计了吗？", "cta": "运行新审计" },
+    "share": {
+      "copy": "复制报告链接",
+      "copied": "报告链接已复制。",
+      "failed": "无法复制链接。",
+      "note": "链接仅在同一设备上打开：报告保存在浏览器的本地存储中。"
+    },
+    "pdf": {
+      "download": "下载 PDF 报告",
+      "generating": "正在生成 PDF…",
+      "failed": "生成 PDF 失败。请重试或尝试打印报告。",
+      "print": "打印报告"
+    }
+  },
+  "notFoundPage": {
+    "title": "页面未找到",
+    "text": "您访问的页面不存在或已被移动。",
+    "home": "返回首页"
+  },
+  "consent": {
+    "title": "Cookie 与隐私",
+    "text": "我们使用可选的 Cookie 来支持 Google Analytics 和广告。审计工具不依赖它们也能完全正常运行。",
+    "accept": "接受",
+    "reject": "拒绝",
+    "manage": "管理偏好",
+    "save": "保存偏好"
+  },
+  "ads": { "label": "广告", "placeholder": "广告位" },
+  "footer": {
+    "tagline": "精准、诚实的网站审计 — 免费且多语言。",
+    "product": "产品",
+    "resources": "资源",
+    "company": "公司",
+    "language": "语言",
+    "rights": "保留所有权利。"
+  },
+  "tools": {
+    "shared": { "runCta": "开始免费审计" },
+    "seoAudit": "网站 SEO 审计",
+    "freeSeoAudit": "免费 SEO 审计",
+    "performanceTest": "网站性能测试",
+    "accessibilityChecker": "网站可访问性检查器",
+    "technicalSeoAudit": "技术 SEO 审计",
+    "securityCheck": "网站安全检查"
+  }
+}

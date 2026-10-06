@@ -1,0 +1,214 @@
+{
+  "common": {
+    "skipToContent": "Lewati ke konten utama",
+    "loading": "Memuat…",
+    "close": "Tutup",
+    "copy": "Salin",
+    "copied": "Tersalin!",
+    "retry": "Coba lagi",
+    "selectLanguage": "Pilih bahasa",
+    "expand": "Lihat detail",
+    "collapse": "Sembunyikan detail",
+    "notAvailable": "Tidak tersedia"
+  },
+  "nav": {
+    "home": "Beranda",
+    "product": "Produk",
+    "tools": "Alat",
+    "about": "Tentang kami",
+    "contact": "Kontak",
+    "cta": "Mulai audit gratis",
+    "menuOpen": "Buka menu",
+    "menuClose": "Tutup menu"
+  },
+  "hero": {
+    "badge": "Gratis · Tanpa pendaftaran",
+    "title": "Audit situs web gratis",
+    "accent": "untuk situs web apa pun",
+    "subtitle": "Analisis SEO, performa, aksesibilitas, keamanan, kesehatan teknis, konten, dan metadata sosial situs web apa pun — dapatkan skor, grafik, dan laporan yang dapat ditindaklanjuti, bisa diunduh sebagai PDF.",
+    "urlLabel": "URL situs web",
+    "placeholder": "https://example.com",
+    "cta": "Mulai audit gratis",
+    "auditing": "Audit dimulai…",
+    "microcopy": "Berjalan di browser Anda. Tanpa akun, tanpa data pribadi.",
+    "trust": [
+      "Tanpa pendaftaran",
+      "Audit dasar gratis",
+      "Unduh laporan PDF",
+      "30 bahasa termasuk maithili",
+      "Rekomendasi yang dapat ditindaklanjuti"
+    ]
+  },
+  "home": {
+    "featuresTitle": "Semua yang Anda butuhkan untuk situs yang lebih sehat",
+    "howTitle": "Cara kerjanya",
+    "ctaTitle": "Siap meningkatkan situs Anda?",
+    "cta": "Mulai audit gratis"
+  },
+  "audit": {
+    "errorTitle": "Kami tidak dapat menjalankan audit ini",
+    "runAgain": "Jalankan audit lagi",
+    "errors": {
+      "empty_url": "Masukkan URL situs web yang ingin diaudit.",
+      "invalid_url": "Ini tampaknya bukan URL yang valid. Coba tulis: https://example.com",
+      "unsupported_protocol": "Hanya situs http:// dan https:// yang dapat diaudit.",
+      "timeout": "Situs terlalu lama merespons. Silakan coba lagi.",
+      "network": "Kami tidak dapat mencapai situs ini dari browser Anda. Situs mungkin sedang offline atau memblokir permintaan.",
+      "cors": "Kami tidak dapat menganalisis situs ini langsung dari browser Anda. Beberapa pemeriksaan memerlukan akses sisi server.",
+      "not_found": "Halaman mengembalikan «tidak ditemukan» (404). Periksa URL dan coba lagi.",
+      "too_large": "Halaman ini terlalu besar untuk dianalisis dengan aman di browser Anda.",
+      "blocked": "Situs ini memblokir permintaan analisis.",
+      "api_failed": "API audit sedang tidak tersedia. Silakan coba lagi nanti.",
+      "unknown": "Terjadi kesalahan saat menjalankan audit. Silakan coba lagi."
+    }
+  },
+  "progress": {
+    "title": "Audit Anda sedang berjalan",
+    "subtitle": "Biarkan tab ini terbuka — analisis lengkap berjalan di browser Anda.",
+    "percent": "{percent}% selesai",
+    "stages": {
+      "validate": "Memverifikasi URL…",
+      "fetch": "Mengunduh halaman…",
+      "aux": "Mencari robots.txt dan sitemap…",
+      "seo": "Menganalisis SEO…",
+      "performance": "Memeriksa indikator performa…",
+      "accessibility": "Memeriksa aksesibilitas…",
+      "security": "Meninjau dasar keamanan…",
+      "technical": "Memeriksa struktur teknis…",
+      "content": "Menganalisis konten…",
+      "social": "Memeriksa metadata sosial…",
+      "generate": "Menyiapkan rekomendasi…",
+      "done": "Laporan siap"
+    }
+  },
+  "report": {
+    "title": "Laporan audit",
+    "auditedUrl": "URL yang diaudit",
+    "auditedOn": "Tanggal audit",
+    "overall": "Skor keseluruhan",
+    "previousScore": "Skor sebelumnya",
+    "firstAudit": "Audit pertama untuk URL ini",
+    "summary": {
+      "issues": "Masalah",
+      "critical": "Kritis",
+      "errors": "Kesalahan",
+      "warnings": "Peringatan",
+      "passed": "Lulus",
+      "notAvailable": "Tidak tersedia",
+      "coverage": "{measured} dari {total} pemeriksaan dapat diukur"
+    },
+    "grades": {
+      "poor": "Buruk",
+      "needs_improvement": "Perlu perbaikan",
+      "good": "Baik",
+      "very_good": "Sangat baik",
+      "excellent": "Luar biasa",
+      "unavailable": "Tidak tersedia"
+    },
+    "categories": {
+      "seo": { "name": "SEO" },
+      "performance": { "name": "Performa" },
+      "accessibility": { "name": "Aksesibilitas" },
+      "security": { "name": "Keamanan" },
+      "technical": { "name": "SEO teknis" },
+      "content": { "name": "Konten" },
+      "social": { "name": "Sosial" }
+    },
+    "sections": {
+      "scores": "Ringkasan skor",
+      "recommendations": "Rekomendasi utama",
+      "issues": "Semua masalah",
+      "metrics": "Metrik terukur",
+      "social": "Pratinjau sosial"
+    },
+    "charts": {
+      "categoryTitle": "Skor per kategori",
+      "distributionTitle": "Hasil pemeriksaan",
+      "coverageNote": "Skor hanya mencakup pemeriksaan yang dapat diukur; yang tidak tersedia tidak memberi poin."
+    },
+    "filters": {
+      "all": "Semua",
+      "critical": "Kritis",
+      "errors": "Kesalahan",
+      "warnings": "Peringatan",
+      "passed": "Lulus",
+      "notAvailable": "Tidak tersedia"
+    },
+    "fields": {
+      "what": "Apa yang kami temukan",
+      "why": "Mengapa ini penting",
+      "fix": "Cara memperbaikinya",
+      "technical": "Detail teknis",
+      "evidence": "Bukti"
+    },
+    "status": {
+      "pass": "Lulus",
+      "warning": "Peringatan",
+      "fail": "Gagal",
+      "not_available": "Tidak tersedia"
+    },
+    "severity": { "critical": "Kritis", "high": "Tinggi", "medium": "Sedang", "low": "Rendah" },
+    "measurement": {
+      "measured": "Terukur",
+      "estimated": "Perkiraan",
+      "unavailable": "Tidak tersedia",
+      "requires_api": "Perlu analisis server/API"
+    },
+    "recommendations": {
+      "empty": "Tidak ada pemeriksaan yang gagal — tidak ada yang perlu diperbaiki saat ini."
+    },
+    "empty": {
+      "title": "Tidak ada yang ditampilkan",
+      "text": "Tidak ditemukan masalah dengan filter ini."
+    },
+    "notFound": {
+      "title": "Laporan tidak ditemukan",
+      "text": "Tautan laporan ini tidak tersedia di perangkat ini. Laporan disimpan secara lokal di browser Anda — jalankan audit lagi untuk laporan baru.",
+      "cta": "Mulai audit gratis"
+    },
+    "new": { "title": "Siap untuk audit berikutnya?", "cta": "Jalankan audit baru" },
+    "share": {
+      "copy": "Salin tautan laporan",
+      "copied": "Tautan laporan disalin.",
+      "failed": "Tidak dapat menyalin tautan.",
+      "note": "Tautan dibuka di perangkat yang sama: laporan tetap tersimpan di penyimpanan lokal browser Anda."
+    },
+    "pdf": {
+      "download": "Unduh laporan PDF",
+      "generating": "Membuat PDF…",
+      "failed": "Gagal membuat PDF. Silakan coba lagi atau cetak laporannya.",
+      "print": "Cetak laporan"
+    }
+  },
+  "notFoundPage": {
+    "title": "Halaman tidak ditemukan",
+    "text": "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
+    "home": "Kembali ke beranda"
+  },
+  "consent": {
+    "title": "Cookie dan privasi",
+    "text": "Kami menggunakan cookie opsional untuk Google Analytics dan iklan. Alat audit tetap berfungsi penuh tanpanya.",
+    "accept": "Terima",
+    "reject": "Tolak",
+    "manage": "Kelola preferensi",
+    "save": "Simpan preferensi"
+  },
+  "ads": { "label": "Iklan", "placeholder": "Slot iklan" },
+  "footer": {
+    "tagline": "Audit situs web yang akurat dan jujur — gratis dan multibahasa.",
+    "product": "Produk",
+    "resources": "Sumber daya",
+    "company": "Perusahaan",
+    "language": "Bahasa",
+    "rights": "Hak cipta dilindungi."
+  },
+  "tools": {
+    "shared": { "runCta": "Mulai audit gratis" },
+    "seoAudit": "Audit SEO situs web",
+    "freeSeoAudit": "Audit SEO gratis",
+    "performanceTest": "Tes performa situs web",
+    "accessibilityChecker": "Pemeriksa aksesibilitas situs",
+    "technicalSeoAudit": "Audit SEO teknis",
+    "securityCheck": "Pemeriksaan keamanan situs"
+  }
+}

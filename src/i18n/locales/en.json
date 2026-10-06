@@ -1,0 +1,550 @@
+{
+  "common": {
+    "skipToContent": "Skip to main content",
+    "loading": "Loading…",
+    "close": "Close",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "share": "Share",
+    "print": "Print",
+    "download": "Download",
+    "retry": "Try again",
+    "back": "Back",
+    "advertisement": "Advertisement",
+    "language": "Language",
+    "selectLanguage": "Select language",
+    "expand": "Show details",
+    "collapse": "Hide details",
+    "notAvailable": "Not available",
+    "optional": "Optional"
+  },
+  "nav": {
+    "home": "Home",
+    "product": "Product",
+    "tools": "Tools",
+    "resources": "Resources",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Start Free Audit",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "language": "Language",
+    "theme": "Theme"
+  },
+  "hero": {
+    "badge": "Free · No signup required",
+    "title": "Free Website Audit",
+    "accent": "for any website",
+    "subtitle": "Analyse SEO, performance, accessibility, security, technical health, content and social metadata — get scores, charts and an actionable report you can download as PDF.",
+    "urlLabel": "Website URL",
+    "placeholder": "https://example.com",
+    "cta": "Start Free Audit",
+    "auditing": "Starting audit…",
+    "microcopy": "Runs in your browser. No account, no personal data.",
+    "trust": [
+      "No signup required",
+      "Free basic audit",
+      "Download PDF report",
+      "30 languages, incl. मैथिली",
+      "Actionable recommendations"
+    ]
+  },
+  "home": {
+    "featuresTitle": "Everything you need to ship a healthier website",
+    "featuresSubtitle": "Seven audit categories, transparent scoring and fixes you can actually implement.",
+    "features": [
+      {
+        "title": "7 audit categories",
+        "desc": "SEO, performance, accessibility, security, technical SEO, content and social — scored independently."
+      },
+      {
+        "title": "Honest measurements",
+        "desc": "Every finding is marked as measured, estimated or requires API. We never invent numbers."
+      },
+      {
+        "title": "Actionable fixes",
+        "desc": "Each issue explains what is wrong, why it matters and exactly how to fix it."
+      },
+      {
+        "title": "PDF & print reports",
+        "desc": "Agency-style report with charts, scores and page numbers — one click to download."
+      },
+      {
+        "title": "Charts & scores",
+        "desc": "A premium score gauge, category bars and a pass/warning/fail breakdown at a glance."
+      },
+      {
+        "title": "Private by design",
+        "desc": "Audits run client-side. We don't ask for an account or collect personal information."
+      }
+    ],
+    "howTitle": "How it works",
+    "howSubtitle": "Three steps, about ten seconds.",
+    "steps": [
+      {
+        "title": "Paste a URL",
+        "desc": "Enter any public http(s) address — we validate it before running anything."
+      },
+      {
+        "title": "We run 70+ checks",
+        "desc": "The audit engine fetches the page, extracts facts and evaluates every check honestly."
+      },
+      {
+        "title": "Get an actionable report",
+        "desc": "Scores, charts, filtered issues and prioritised recommendations — share or download."
+      }
+    ],
+    "ctaTitle": "Ready to improve your website?",
+    "ctaSubtitle": "Run a full audit now — it's free, and there is nothing to install.",
+    "cta": "Start Free Audit"
+  },
+  "sample": {
+    "title": "A report you can act on",
+    "subtitle": "Scores, category breakdowns and prioritised fixes — not a wall of raw data.",
+    "disclaimer": "Illustrative sample data"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know about the free website audit.",
+    "items": [
+      {
+        "q": "Is WebAudit Pro really free?",
+        "a": "Yes. The full audit, scores, charts, PDF download and sharing are free, with no signup or credit card. Optional ads keep it free."
+      },
+      {
+        "q": "How accurate is a browser-based audit?",
+        "a": "Everything we mark as “Measured” was observed directly in your browser during the run. Checks that need server-side data are clearly marked “Requires server/API analysis” instead of being guessed."
+      },
+      {
+        "q": "Which checks require a server or API?",
+        "a": "Response security headers (HSTS, CSP header, X-Content-Type-Options), caching and compression headers, full-page load timing, Core Web Vitals, multi-page crawling, DNS/WHOIS and backlink data. The report lists exactly what could not be measured."
+      },
+      {
+        "q": "Do you store my reports or personal data?",
+        "a": "Reports are stored locally in your browser so you can revisit them. We don't require an account and don't collect personal information. The audited URL is sent to the website being checked (and, as a fallback, to a CORS proxy) — see the Privacy Policy."
+      },
+      {
+        "q": "Can I download and share a report?",
+        "a": "Yes — download a PDF, print a clean report layout, or copy a link to the report. Shared links open on the device where the audit was run, because reports stay in local storage."
+      },
+      {
+        "q": "Which languages are supported?",
+        "a": "30 languages including English, हिन्दी, বাংলা, मैथिली (Maithili), नेपाली, اردو and العربية with full right-to-left layout. More languages can be added with a single JSON file."
+      }
+    ]
+  },
+  "seoCopy": {
+    "h2a": "What does the free website audit check?",
+    "p1": "WebAudit Pro evaluates every page it can read across seven categories: on-page SEO (titles, meta descriptions, headings, canonicals, structured data), performance signals (resource counts, render-blocking scripts, image optimisation), accessibility (alt text, form labels, landmarks, heading order), security basics observable from the browser (HTTPS, mixed content, security meta tags), technical SEO (robots.txt, sitemap, redirects, URL structure, hreflang), content depth (word count, text-to-HTML ratio, readability) and social metadata (Open Graph, Twitter/X cards).",
+    "h2b": "Why run an audit before every launch?",
+    "p2": "A missing meta description, a broken heading hierarchy or an image without alt text rarely breaks a site — but together they cost rankings, conversions and accessibility compliance. Fixing issues before launch is orders of magnitude cheaper than patching them after users and crawlers have seen the page.",
+    "h2c": "Browser-based vs server-side analysis",
+    "p3": "Accuracy matters more than impressive-looking numbers. This tool runs in your browser, so it can only report what a browser can observe: the HTML it can fetch and the DOM it can parse. Anything requiring server-side access — response headers, crawling an entire domain, Core Web Vitals field data, backlink indexes — is labelled “Requires server/API analysis” rather than faked. Connect the API adapter described in the README to unlock those checks.",
+    "p4": "WebAudit Pro is multilingual by design: switch language from any page and the whole interface, the report and the PDF follow — including right-to-left layouts for Arabic, Urdu and Persian."
+  },
+  "audit": {
+    "errors": {
+      "empty_url": "Please enter a website URL to audit.",
+      "invalid_url": "That doesn't look like a valid URL. Try something like https://example.com",
+      "unsupported_protocol": "Only http:// and https:// websites can be audited.",
+      "timeout": "The website took too long to respond. Please try again.",
+      "network": "We couldn't reach this website from your browser. It may be offline or blocking requests.",
+      "cors": "We couldn't analyze this website directly from your browser. Some checks require server-side access.",
+      "not_found": "The page returned “not found” (404). Check the URL and try again.",
+      "too_large": "This page is too large to analyze safely in your browser.",
+      "blocked": "This website blocked the analysis request.",
+      "api_failed": "The audit API is unavailable right now. Please try again later.",
+      "unknown": "Something went wrong while running the audit. Please try again."
+    },
+    "runAgain": "Run the audit again",
+    "errorTitle": "We couldn't run this audit",
+    "browserNote": "Audits run in your browser. Sites that forbid cross-origin reads are analysed through a public read-only proxy or reported as unavailable — we never guess."
+  },
+  "progress": {
+    "title": "Running your audit",
+    "subtitle": "Keep this tab open — the whole analysis runs locally in your browser.",
+    "percent": "{percent}% complete",
+    "stages": {
+      "validate": "Checking the URL…",
+      "fetch": "Downloading the page…",
+      "aux": "Looking for robots.txt and sitemap…",
+      "seo": "Analysing SEO…",
+      "performance": "Checking performance signals…",
+      "accessibility": "Checking accessibility…",
+      "security": "Reviewing security basics…",
+      "technical": "Checking technical structure…",
+      "content": "Analysing content…",
+      "social": "Checking social metadata…",
+      "generate": "Preparing recommendations…",
+      "done": "Report ready"
+    }
+  },
+  "report": {
+    "title": "Audit report",
+    "auditedUrl": "Audited URL",
+    "auditedOn": "Audited on",
+    "engine": "Audit engine",
+    "overall": "Overall score",
+    "outOf": "{score}/100",
+    "previousScore": "Previous score",
+    "delta": "{delta} points vs. previous audit",
+    "firstAudit": "First audit for this URL",
+    "summary": {
+      "issues": "Issues",
+      "critical": "Critical",
+      "errors": "Errors",
+      "warnings": "Warnings",
+      "passed": "Passed",
+      "notAvailable": "Not available",
+      "coverage": "{measured} of {total} checks measurable"
+    },
+    "grades": {
+      "poor": "Poor",
+      "needs_improvement": "Needs Improvement",
+      "good": "Good",
+      "very_good": "Very Good",
+      "excellent": "Excellent",
+      "unavailable": "Not available"
+    },
+    "categories": {
+      "seo": {
+        "name": "SEO",
+        "desc": "Titles, metadata, headings, links and on-page signals"
+      },
+      "performance": {
+        "name": "Performance",
+        "desc": "Page weight, resources, render-blocking work and timing"
+      },
+      "accessibility": {
+        "name": "Accessibility",
+        "desc": "Alt text, labels, landmarks and WCAG-oriented checks"
+      },
+      "security": {
+        "name": "Security",
+        "desc": "HTTPS, mixed content and browser-observable protections"
+      },
+      "technical": {
+        "name": "Technical SEO",
+        "desc": "Crawling, redirects, canonicals and indexability"
+      },
+      "content": {
+        "name": "Content",
+        "desc": "Depth, structure, readability and text signals"
+      },
+      "social": {
+        "name": "Social",
+        "desc": "Open Graph and Twitter/X sharing metadata"
+      }
+    },
+    "sections": {
+      "scores": "Score overview",
+      "charts": "Charts",
+      "recommendations": "Top recommendations",
+      "recommendationsSub": "Fix these first for the biggest impact.",
+      "issues": "All issues",
+      "issuesSub": "Filter by severity or status — expand any row for the fix.",
+      "metrics": "Measured metrics",
+      "social": "Social preview",
+      "methodology": "How scoring works"
+    },
+    "charts": {
+      "categoryTitle": "Score by category",
+      "categorySummary": "Category scores: {items}.",
+      "distributionTitle": "Check results",
+      "distributionSummary": "{passed} passed, {warnings} warnings, {errors} errors, {na} not available — out of {total} checks.",
+      "coverageNote": "Scores include measurable checks only; unavailable checks never add points."
+    },
+    "filters": {
+      "title": "Filter issues",
+      "all": "All",
+      "critical": "Critical",
+      "errors": "Errors",
+      "warnings": "Warnings",
+      "passed": "Passed",
+      "notAvailable": "Not Available",
+      "resultCount": "{count} shown"
+    },
+    "fields": {
+      "what": "What we found",
+      "why": "Why it matters",
+      "fix": "How to fix it",
+      "technical": "Technical details",
+      "evidence": "Evidence",
+      "severity": "Severity",
+      "weight": "Weight",
+      "category": "Category"
+    },
+    "status": {
+      "pass": "Passed",
+      "warning": "Warning",
+      "fail": "Failed",
+      "not_available": "Not available"
+    },
+    "severity": {
+      "critical": "Critical",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "measurement": {
+      "measured": "Measured",
+      "estimated": "Estimated",
+      "unavailable": "Not available",
+      "requires_api": "Requires server/API analysis"
+    },
+    "recommendations": {
+      "empty": "No failing checks — nothing to fix right now."
+    },
+    "limitations": {
+      "title": "What this audit could not measure",
+      "note": "These checks need server-side or API access. We show gaps instead of inventing results.",
+      "items": {
+        "security_headers": "Response security headers (HSTS, CSP, X-Content-Type-Options, Referrer-Policy, Permissions-Policy) require server-side access and were not verified.",
+        "core_web_vitals": "Core Web Vitals (LCP, INP, CLS) need the PageSpeed Insights or CrUX API — connect the API adapter to measure them.",
+        "page_timing": "Full page-load timing (DOMContentLoaded, load event of the audited page) is not observable from another origin; only this run's HTML fetch was timed.",
+        "caching": "Caching and compression headers (Cache-Control, gzip/Brotli) require reading HTTP response headers server-side.",
+        "contrast": "Colour-contrast ratios require rendering the live page with computed styles — not possible on fetched HTML alone.",
+        "crawling": "This audit reads one page. Site-wide crawling, pagination and orphan-page analysis require a server-side crawler.",
+        "backlinks": "Backlink, domain-authority and keyword-ranking data require third-party SEO APIs.",
+        "server": "DNS, WHOIS, hosting and server-technology fingerprints are not observable from the browser."
+      }
+    },
+    "metrics": {
+      "fetchTime": "HTML fetch time",
+      "fetchTimeHint": "Time to download this page's HTML in your browser — not full page-load time.",
+      "resources": "Resources referenced",
+      "scripts": "Scripts",
+      "stylesheets": "Stylesheets",
+      "images": "Images",
+      "fonts": "Fonts",
+      "words": "Words",
+      "headings": "Headings",
+      "paragraphs": "Paragraphs",
+      "links": "Links",
+      "ratio": "Text/HTML ratio",
+      "readability": "Readability (grade)",
+      "readabilityHint": "Approximation based on word and sentence length.",
+      "topTerms": "Most frequent terms",
+      "coreWebVitals": "Core Web Vitals",
+      "requiresApi": "Requires PageSpeed/Lighthouse API"
+    },
+    "social": {
+      "title": "Social preview",
+      "cardLabel": "Link preview",
+      "missingImage": "No preview image",
+      "missing": "Missing"
+    },
+    "empty": {
+      "title": "Nothing to show",
+      "text": "No issues match this filter."
+    },
+    "notFound": {
+      "title": "Report not found",
+      "text": "This report link isn't available on this device. Reports are stored locally in your browser — run the audit again to create a fresh one.",
+      "cta": "Start a free audit"
+    },
+    "new": {
+      "title": "Ready for another one?",
+      "subtitle": "Audit another website in seconds — no signup required.",
+      "cta": "Run a new audit"
+    },
+    "share": {
+      "copy": "Copy report link",
+      "copied": "Report link copied to clipboard.",
+      "failed": "Couldn't copy the link — please copy it from the address bar.",
+      "note": "Links open on this device: reports stay in your browser's local storage."
+    },
+    "pdf": {
+      "download": "Download PDF Report",
+      "generating": "Generating PDF…",
+      "failed": "PDF generation failed. Please try again or use Print Report.",
+      "print": "Print Report"
+    }
+  },
+  "notFoundPage": {
+    "title": "Page not found",
+    "text": "The page you're looking for doesn't exist or has moved.",
+    "home": "Go to the homepage"
+  },
+  "consent": {
+    "title": "Cookies & privacy",
+    "text": "We use optional cookies for Google Analytics and advertising. The audit tool works fully without them.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "manage": "Manage preferences",
+    "prefsTitle": "Cookie preferences",
+    "necessary": "Essential",
+    "necessaryDesc": "Required for core functionality. Always on.",
+    "analytics": "Analytics",
+    "analyticsDesc": "Anonymous usage statistics via Google Analytics.",
+    "ads": "Advertising",
+    "adsDesc": "Ad delivery via Google AdSense.",
+    "save": "Save preferences"
+  },
+  "ads": {
+    "label": "Advertisement",
+    "placeholder": "Ad space"
+  },
+  "footer": {
+    "tagline": "Accurate, honest website audits — free and multilingual.",
+    "product": "Product",
+    "resources": "Resources",
+    "company": "Company",
+    "legal": "Legal",
+    "language": "Language",
+    "rights": "All rights reserved.",
+    "disclaimer": "Audit results are informational and are not a guarantee of search-engine rankings, security, compliance or performance."
+  },
+  "pages": {
+    "about": {
+      "title": "About",
+      "description": "Why WebAudit Pro exists: honest, accessible, multilingual website audits with transparent scoring and no signup.",
+      "h1": "About WebAudit Pro",
+      "p1": "WebAudit Pro started from a simple frustration: most free “website checkers” show impressive numbers they cannot possibly know. A browser cannot read your server's security headers, and a single fetch is not a crawl — so we refuse to pretend otherwise.",
+      "p2": "Every check in this tool carries a measurement badge: measured directly, estimated, or requires server/API analysis. The scoring engine never awards points for checks it could not run, and every report lists its own gaps.",
+      "p3": "The product is free, multilingual (30 languages, including Maithili with full Devanagari support) and built as a static site — no accounts, no personal data, no backend to breach.",
+      "valuesTitle": "What we optimise for",
+      "values": [
+        "Accuracy before vanity scores",
+        "Plain-language, actionable recommendations",
+        "Accessibility and RTL support as defaults",
+        "Privacy: local reports, minimal data"
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch with the WebAudit Pro team — questions, feedback, partnerships and bug reports.",
+      "h1": "Contact us",
+      "intro": "Have a question, found a bug, or want to partner on integrations? We read everything.",
+      "emailLabel": "Email",
+      "responseNote": "We usually reply within two business days.",
+      "topicsTitle": "Best used for",
+      "topics": [
+        "Bug reports and inaccurate checks",
+        "Feature requests and new language proposals",
+        "API / integration partnerships",
+        "Advertising and sponsorship"
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How WebAudit Pro handles data: local report storage, optional analytics and advertising cookies.",
+      "h1": "Privacy Policy",
+      "updated": "Last updated"
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "The terms that apply when you use WebAudit Pro.",
+      "h1": "Terms of Service",
+      "updated": "Last updated"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "description": "Important limitations of the audit results provided by WebAudit Pro.",
+      "h1": "Disclaimer",
+      "updated": "Last updated"
+    }
+  },
+  "tools": {
+    "shared": {
+      "runCta": "Start Free Audit",
+      "note": "Free · No signup · PDF report included",
+      "checklistTitle": "What this audit covers",
+      "limitationsTitle": "What needs a server-side API",
+      "ctaTitle": "Run this audit on your website",
+      "ctaSubtitle": "It takes about ten seconds and runs entirely in your browser."
+    },
+    "seoAudit": {
+      "title": "Website SEO Audit",
+      "description": "Run a free on-page SEO audit: titles, meta descriptions, headings, canonicals, structured data, links and Open Graph tags with scores and fixes.",
+      "h1": "Free Website SEO Audit",
+      "intro": "Check the on-page SEO signals that decide whether search engines can understand, index and rank your page — with a clear score and a fix for every issue.",
+      "bullets": [
+        "Titles, meta descriptions and length best practices",
+        "Heading hierarchy, H1 issues and content structure",
+        "Canonical, robots meta, hreflang and structured data",
+        "Internal/external links, anchor text and image alt attributes"
+      ]
+    },
+    "freeSeoAudit": {
+      "title": "Free SEO Audit",
+      "description": "Free SEO audit for any website — 20+ on-page checks, transparent scoring, actionable recommendations and a downloadable PDF report.",
+      "h1": "Free SEO Audit, No Signup",
+      "intro": "A genuinely free SEO audit: run unlimited checks, see exactly what was measured, and download the report as a PDF — no account, no credit card, no email wall.",
+      "bullets": [
+        "Unlimited free audits with instant results",
+        "Transparent scoring — unavailable checks never inflate the score",
+        "Prioritised recommendations: what to fix first",
+        "PDF and print exports for clients and teams"
+      ]
+    },
+    "performanceTest": {
+      "title": "Website Performance Test",
+      "description": "Analyse page weight, resource counts, render-blocking scripts and image optimisation — with clear markers for what needs a PageSpeed API.",
+      "h1": "Website Performance Test",
+      "intro": "Get a fast, honest read on your page's performance signals — and see exactly which metrics require a real Lighthouse or PageSpeed integration.",
+      "bullets": [
+        "Resource counts: scripts, CSS, images, fonts, iframes",
+        "Render-blocking resources in the document head",
+        "Image optimisation: lazy loading, modern formats, dimensions",
+        "Clear placeholders for Core Web Vitals via PageSpeed API"
+      ]
+    },
+    "accessibilityChecker": {
+      "title": "Website Accessibility Checker",
+      "description": "Check image alt text, form labels, link and button names, heading order, landmarks and language attributes against WCAG-oriented rules.",
+      "h1": "Website Accessibility Checker",
+      "intro": "Catch the accessibility barriers that exclude real users — missing alt text, unlabelled inputs, unnamed links and broken heading order — with WCAG-oriented guidance.",
+      "bullets": [
+        "Images without alt text and empty alt attributes",
+        "Form inputs without associated labels",
+        "Links and buttons without accessible names",
+        "Landmarks, heading order, lang attribute and viewport"
+      ]
+    },
+    "technicalSeoAudit": {
+      "title": "Technical SEO Audit",
+      "description": "Technical SEO checks: robots.txt, sitemap.xml, redirects, canonicals, HTTPS, URL structure, hreflang, favicon and charset.",
+      "h1": "Technical SEO Audit",
+      "intro": "Verify the infrastructure crawlers depend on: robots.txt, XML sitemaps, redirects, canonicals, URL hygiene, hreflang and indexability signals.",
+      "bullets": [
+        "robots.txt and sitemap.xml availability",
+        "Redirect chains and final-URL stability",
+        "URL structure, HTTPS and canonical correctness",
+        "Charset, viewport, favicon, hreflang and pagination hints"
+      ]
+    },
+    "securityCheck": {
+      "title": "Website Security Check",
+      "description": "Check what browsers can verify: HTTPS, mixed content, CSP meta tags, referrer policy — with every server-side header clearly marked.",
+      "h1": "Website Security Check",
+      "intro": "Verify the security signals a browser can actually observe, and see precisely which protections need server-side header analysis instead of a green checkmark we can't back up.",
+      "bullets": [
+        "HTTPS usage and insecure (mixed) resource references",
+        "Content-Security-Policy and Referrer-Policy meta tags",
+        "Form submission and link protocol hygiene",
+        "Explicit coverage gaps: HSTS, X-Content-Type-Options and more"
+      ]
+    }
+  },
+  "scoring": {
+    "title": "How scoring works",
+    "text": "Every check has a weight and a status: pass earns full credit, warning earns half, fail earns none. Checks that could not be measured are excluded from the denominator and shown as “Not available” — they never add points. Category scores are confidence-adjusted when coverage is partial, so a category with unavailable checks cannot display a perfect 100, and a category with nothing measurable shows “Not available” instead of a fake number."
+  },
+  "pdf": {
+    "reportTitle": "Website Audit Report",
+    "overallScore": "Overall score",
+    "categoryScores": "Category scores",
+    "issues": "Findings & recommendations",
+    "summary": "Summary",
+    "generatedBy": "Generated by",
+    "generatedOn": "Generated on",
+    "page": "Page",
+    "of": "of",
+    "note": "Informational report. Not a guarantee of search-engine rankings, security, compliance or performance.",
+    "checksLine": "{total} checks · {passed} passed · {warnings} warnings · {errors} errors · {na} not available"
+  },
+  "homeSample": {
+    "scoreLabel": "Overall"
+  }
+}

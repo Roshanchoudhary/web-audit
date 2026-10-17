@@ -355,7 +355,7 @@ export default function ReportPage() {
         </div>
 
         {/* -------------------------------------------------------- issues */}
-        <section aria-labelledby="issues-title" className="space-y-4">
+        <section id="all-findings" aria-labelledby="issues-title" className="space-y-4">
           <div>
             <h2 id="issues-title" className="text-lg font-extrabold tracking-tight text-ink-950">
               {t('report.sections.issues')}

@@ -500,7 +500,8 @@ class ReportRenderer {
       text.t('report.sections.recommendations'),
       text.t('report.sections.recommendationsSub'),
     );
-    recs.forEach((issueItem, index) => {
+    recs.forEach((rec, index) => {
+      const issueItem = rec.issue;
       const check = getCheck(issueItem.checkId);
       if (!check) return;
       const title = text.tCheck(check.id, 'title', check.title);
@@ -521,7 +522,7 @@ class ReportRenderer {
       const savedY = this.y;
       const titleX = this.rtl ? this.left : this.left + 52;
       this.y = savedY;
-      const severity = text.t(`report.severity.${rec.issue.severity}`);
+      const severity = text.t(`report.severity.${issueItem.severity}`);
       const used = this.paragraph(`${severity}: ${title} — ${fix}`, {
         size: 19,
         color: COLORS.ink,

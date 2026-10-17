@@ -35,8 +35,9 @@ export function URLInput({ value, onChange, label, placeholder, error, disabled 
         </span>
         <input
           id={id}
-          type="text"
+          type="url"
           inputMode="url"
+          enterKeyHint="go"
           autoComplete="url"
           autoCapitalize="none"
           spellCheck={false}

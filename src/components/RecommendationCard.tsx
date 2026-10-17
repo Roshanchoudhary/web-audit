@@ -1,4 +1,5 @@
 import type { AuditRecommendation } from '../types';
+import { Link } from 'react-router-dom';
 import { useI18n } from '../i18n';
 import { getCheck } from '../audit/checks';
 
@@ -53,6 +54,14 @@ export function RecommendationCard({ recommendations }: RecommendationCardProps)
                 </span>
               </div>
               <p className="mt-1.5 text-sm leading-relaxed text-ink-700/85">{fix}</p>
+              <p className="mt-2 text-xs leading-relaxed text-slate-500">{check.why}</p>
+              <Link
+                to={`#issue-${rec.issue.checkId}`}
+                className="mt-3 inline-flex min-h-9 items-center gap-1 rounded-lg text-sm font-bold text-brand-700 underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-600"
+                aria-label={`View finding: ${title}`}
+              >
+                View finding <span aria-hidden="true">→</span>
+              </Link>
             </div>
           </li>
         );

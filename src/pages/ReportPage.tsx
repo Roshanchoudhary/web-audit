@@ -231,6 +231,26 @@ export default function ReportPage() {
 
         <AdSlot variant="report" className="no-print" />
 
+        <nav aria-label="Report sections" className="no-print rounded-2xl border border-slate-200 bg-white p-4">
+          <p className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-500">Jump to a section</p>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { href: '#recommendations-title', label: t('report.sections.recommendations') },
+              { href: '#metrics-title', label: t('report.sections.metrics') },
+              { href: '#all-findings', label: t('report.sections.issues') },
+              { href: '#limitations-title', label: t('report.limitations.title') },
+            ].map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="inline-flex min-h-10 items-center rounded-xl border border-slate-200 px-3 py-2 text-sm font-semibold text-brand-800 transition hover:border-brand-300 hover:bg-brand-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-600"
+              >
+                {item.label} <span aria-hidden="true" className="ms-1">↓</span>
+              </a>
+            ))}
+          </div>
+        </nav>
+
         {/* ------------------------------------------------------- scores */}
         <ScoreCard report={report} />
 
@@ -279,7 +299,7 @@ export default function ReportPage() {
         </div>
 
         {/* ----------------------------------------------- recommendations */}
-        <section aria-labelledby="recommendations-title" className="space-y-4">
+        <section aria-labelledby="recommendations-title" className="scroll-mt-6 space-y-4">
           <div>
             <h2
               id="recommendations-title"
@@ -297,7 +317,7 @@ export default function ReportPage() {
           aria-labelledby="limitations-title"
           className="rounded-3xl border border-slate-200 bg-slate-50 p-6"
         >
-          <h2 id="limitations-title" className="text-base font-bold text-ink-950">
+          <h2 id="limitations-title" className="scroll-mt-6 text-base font-bold text-ink-950">
             {t('report.limitations.title')}
           </h2>
           <p className="mt-1 text-sm text-slate-500">{t('report.limitations.note')}</p>
@@ -317,7 +337,7 @@ export default function ReportPage() {
         {/* ------------------------------------------------ metrics + social */}
         <div className="grid gap-5 lg:grid-cols-2">
           <section aria-labelledby="metrics-title" className="surface p-6">
-            <h2 id="metrics-title" className="text-base font-bold text-ink-950">
+            <h2 id="metrics-title" className="scroll-mt-6 text-base font-bold text-ink-950">
               {t('report.sections.metrics')}
             </h2>
             <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
@@ -355,7 +375,7 @@ export default function ReportPage() {
         </div>
 
         {/* -------------------------------------------------------- issues */}
-        <section aria-labelledby="issues-title" className="space-y-4">
+        <section id="all-findings" aria-labelledby="issues-title" className="space-y-4">
           <div>
             <h2 id="issues-title" className="text-lg font-extrabold tracking-tight text-ink-950">
               {t('report.sections.issues')}

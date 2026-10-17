@@ -34,12 +34,16 @@ export default function Contact() {
         <p className="mt-4 text-lg leading-relaxed text-ink-700/85">{t('pages.contact.intro')}</p>
 
         <div className="mt-8 surface p-6 sm:p-8">
-          <h2 className="text-base font-bold text-ink-950">{t('pages.contact.emailLabel')}</h2>
+          <h2 className="text-base font-bold text-ink-950">
+            {siteConfig.contact.email ? t('pages.contact.emailLabel') : 'Support & feedback'}
+          </h2>
           <a
             href={siteConfig.contact.supportUrl ?? `mailto:${siteConfig.contact.email}`}
             className="mt-2 inline-block text-xl font-bold text-brand-700 underline-offset-4 hover:underline"
+            target={siteConfig.contact.supportUrl?.startsWith('https://') ? '_blank' : undefined}
+            rel={siteConfig.contact.supportUrl?.startsWith('https://') ? 'noopener noreferrer' : undefined}
           >
-            {siteConfig.contact.email}
+            {siteConfig.contact.email || 'Open GitHub issues'}
           </a>
           <p className="mt-2 text-sm text-slate-500">{t('pages.contact.responseNote')}</p>
 

@@ -37,6 +37,41 @@ function looksLikeHtml(text: string): boolean {
   return /<(!doctype\s+html|html[\s>])/i.test(text);
 }
 
+/**
+ * Read response bodies with a byte limit. Content-Length is often absent or
+ * unreliable on cross-origin responses, so enforce the limit while streaming.
+ */
+async function readTextLimited(response: Response, maxBytes: number): Promise<string> {
+  const reader = response.body?.getReader();
+  if (!reader) {
+    const text = await response.text();
+    if (new TextEncoder().encode(text).byteLength > maxBytes) {
+      throw new AuditError('too_large');
+    }
+    return text;
+  }
+
+  const decoder = new TextDecoder();
+  let bytesRead = 0;
+  let text = '';
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      bytesRead += value.byteLength;
+      if (bytesRead > maxBytes) {
+        await reader.cancel();
+        throw new AuditError('too_large');
+      }
+      text += decoder.decode(value, { stream: true });
+    }
+    text += decoder.decode();
+    return text;
+  } finally {
+    reader.releaseLock();
+  }
+}
+
 function proxyTemplates(): string[] {
   const { proxyTemplate, proxyFallbacks } = siteConfig.audit;
   return [proxyTemplate, ...proxyFallbacks].filter(Boolean);
@@ -96,8 +131,7 @@ async function attempt(
     const contentLength = Number(response.headers.get('content-length') ?? '0');
     if (contentLength > MAX_TEXT_BYTES) throw new AuditError('too_large');
 
-    const text = await response.text();
-    if (text.length > MAX_TEXT_BYTES) throw new AuditError('too_large');
+    const text = await readTextLimited(response, MAX_TEXT_BYTES);
     if (extra.expectHtml && !looksLikeHtml(text)) {
       // A proxy answered, but with Markdown/JSON instead of the page — treat
       // it as a failed hop so the next fallback gets a chance.

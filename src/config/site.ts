@@ -55,19 +55,12 @@ export const siteConfig: SiteConfig = {
   favicon: '/favicon.svg',
   defaultLanguage: 'en',
   languages: LANGUAGES,
-  social: [
-    // Replace with your real profiles — labels are i18n-neutral.
-    { platform: 'x', label: 'X / Twitter', url: 'https://x.com/webauditpro' },
-    {
-      platform: 'linkedin',
-      label: 'LinkedIn',
-      url: 'https://www.linkedin.com/company/webauditpro',
-    },
-    { platform: 'github', label: 'GitHub', url: 'https://github.com/webauditpro/webaudit-pro' },
-  ],
+  // Add social profiles here only after the real accounts are verified.
+  social: [],
   contact: {
-    email: 'hello@webauditpro.example.com',
-    supportUrl: 'mailto:hello@webauditpro.example.com',
+    // Until a public support email is configured, route feedback to this repository.
+    email: '',
+    supportUrl: 'https://github.com/Roshanchoudhary/web-audit/issues',
   },
   ads: {
     // Replace YOUR_ADSENSE_CLIENT_ID (or set VITE_ADSENSE_CLIENT_ID) with the

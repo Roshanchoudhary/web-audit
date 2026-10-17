@@ -41,7 +41,7 @@ export function AuditIssue({ issue }: AuditIssueProps) {
   const isWarning = issue.status === 'warning';
 
   return (
-    <details className="group rounded-2xl border border-slate-200 bg-white transition-shadow open:shadow-card hover:shadow-card">
+    <details id={`issue-${issue.checkId}`} className="group rounded-2xl border border-slate-200 bg-white transition-shadow open:shadow-card hover:shadow-card">
       <summary className="flex cursor-pointer list-none items-start gap-3 p-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-600 focus-visible:ring-inset sm:p-5 [&::-webkit-details-marker]:hidden">
         <span
           aria-hidden="true"

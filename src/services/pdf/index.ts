@@ -22,6 +22,20 @@ export async function generatePdfReport(options: PdfOptions): Promise<Blob> {
   });
   const width = doc.internal.pageSize.getWidth();
   const height = doc.internal.pageSize.getHeight();
+  const { report, brand, text } = options;
+  const measured = report.counts.total - report.counts.notAvailable;
+
+  // Set useful document metadata so downloaded reports are easier to identify.
+  doc.setProperties({
+    title: `${brand.name} — ${text.t('pdf.reportTitle')} — ${report.url}`,
+    subject: text.t('report.summary.coverage', {
+      measured,
+      total: report.counts.total,
+    }),
+    author: brand.name,
+    creator: `${brand.name} website audit`,
+    keywords: 'website audit, SEO, accessibility, security, performance',
+  });
 
   pages.forEach((dataUrl, index) => {
     if (index > 0) doc.addPage();

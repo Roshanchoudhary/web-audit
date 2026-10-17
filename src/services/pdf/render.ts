@@ -1,6 +1,7 @@
 import type { AuditReport } from '../../types';
 import { getCheck } from '../../audit/checks';
 import { scoreHex as scoreColor } from '../../utils/format';
+import { topRecommendations } from '../../audit/scoring';
 
 /**
  * Client-side PDF report renderer.
@@ -469,11 +470,31 @@ class ReportRenderer {
     this.y += 6;
   }
 
+  private executiveSummary(): void {
+    const { report, text } = this.opts;
+    const measured = report.counts.total - report.counts.notAvailable;
+    this.sectionTitle(text.t('report.summary'), text.t('report.summary.coverage', {
+      measured,
+      total: report.counts.total,
+    }));
+
+    const summary = text.t('pdf.checksLine', {
+      total: report.counts.total,
+      passed: report.counts.passed,
+      warnings: report.counts.warnings,
+      errors: report.counts.errors,
+      na: report.counts.notAvailable,
+    });
+    this.paragraph(summary, { size: 19, color: COLORS.ink, lineHeight: 29 });
+    this.y += 8;
+    const confidence = text.t('report.charts.coverageNote');
+    this.paragraph(confidence, { size: 17, color: COLORS.muted, lineHeight: 25 });
+    this.y += 10;
+  }
+
   private recommendations(): void {
     const { report, text } = this.opts;
-    const recs = report.issues
-      .filter((i) => i.status === 'fail' || i.status === 'warning')
-      .slice(0, 5);
+    const recs = topRecommendations(report.issues, 5);
     if (recs.length === 0) return;
     this.sectionTitle(
       text.t('report.sections.recommendations'),
@@ -500,7 +521,8 @@ class ReportRenderer {
       const savedY = this.y;
       const titleX = this.rtl ? this.left : this.left + 52;
       this.y = savedY;
-      const used = this.paragraph(`${title} — ${fix}`, {
+      const severity = text.t(`report.severity.${rec.issue.severity}`);
+      const used = this.paragraph(`${severity}: ${title} — ${fix}`, {
         size: 19,
         color: COLORS.ink,
         x: titleX,
@@ -704,6 +726,7 @@ class ReportRenderer {
     /* ---- page 2: metrics, limitations, recommendations ---- */
     this.newPage();
     this.bandTitle(text.t('report.sections.metrics'));
+    this.executiveSummary();
     this.metricsGrid();
     this.y += 10;
     this.sectionTitle(text.t('report.charts.distributionTitle'));

@@ -2,7 +2,7 @@
 
 Free, multilingual website audit tool. Paste any URL and get a 7-category report — **SEO, Performance, Accessibility, Security, Technical SEO, Content, Social** — with ~75 checks, honest scoring, charts, actionable fixes and a client-side PDF download. No account, no server, no tracking by default.
 
-- **30 languages**, including मैथिली (Maithili), with RTL support for Arabic, Urdu and Persian.
+- **31 languages**, including 15 Indian languages such as मैथिली (Maithili) and Konkani, with RTL support for Arabic, Urdu and Persian.
 - **Runs entirely in the browser**: the page is fetched and analysed locally; an API adapter is available for checks that need server-side access.
 - **Honest scoring**: every check is labelled _measured_, _estimated_, _unavailable_ or _requires_api_ — unmeasurable checks never inflate or deflate a score.
 - **Client-side PDF reports** rendered on canvas → jsPDF, with print and same-device share links.

@@ -176,12 +176,13 @@ class ReportRenderer {
     const x = opts.x ?? this.left;
     const maxWidth = opts.maxWidth ?? this.contentWidth;
     const lines = this.wrap(str, maxWidth, fontString);
-    const ctx = this.ctx;
-    ctx.font = fontString;
-    ctx.fillStyle = opts.color ?? COLORS.ink;
     let drawn = 0;
     for (const lineText of lines) {
       this.ensureSpace(lineHeight + 4);
+      // ensureSpace may switch canvases; always draw on the active page context.
+      const ctx = this.ctx;
+      ctx.font = fontString;
+      ctx.fillStyle = opts.color ?? COLORS.ink;
       ctx.fillText(lineText, x, this.y + size, maxWidth);
       this.y += lineHeight;
       drawn += lineHeight;

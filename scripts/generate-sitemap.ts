@@ -6,7 +6,7 @@
  * Run with: bun run sitemap
  *
  * Each indexable page is emitted once (default-language, unprefixed URL) with a
- * full `xhtml:link` hreflang alternate set for all 32 languages plus
+ * full `xhtml:link` hreflang alternate set for all 31 languages plus
  * x-default — search engines discover the localized variants through it.
  */
 import { ALL_PUBLIC_PATHS } from '../src/config/pages';

@@ -37,6 +37,7 @@ export const LANGUAGES: Language[] = [
   { code: 'ml', name: 'മലയാളം', englishName: 'Malayalam', dir: 'ltr' },
   { code: 'or', name: 'ଓଡ଼ିଆ', englishName: 'Odia', dir: 'ltr' },
   { code: 'as', name: 'অসমীয়া', englishName: 'Assamese', dir: 'ltr' },
+  { code: 'kok', name: 'कोंकणी', englishName: 'Konkani', dir: 'ltr' },
 ];
 
 const env = import.meta.env;

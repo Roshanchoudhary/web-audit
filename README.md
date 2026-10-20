@@ -78,7 +78,7 @@ Reports persist in `localStorage` (`wap.reports.v1`, max 12, one per URL) — sh
 
 ## SEO pages
 
-`src/config/pages.ts` is the single registry for tool landing pages and static/legal pages. Each renders at `/{path}` and `/{lang}/{path}`. `bun run sitemap` regenerates `public/sitemap.xml` (12 pages × 32 languages with `xhtml:link` hreflang sets) — rerun it whenever you add a page or language.
+`src/config/pages.ts` is the single registry for tool landing pages and static/legal pages. Each renders at `/{path}` and `/{lang}/{path}`. `bun run sitemap` regenerates `public/sitemap.xml` (12 pages × 31 languages with `xhtml:link` hreflang sets) — rerun it whenever you add a page or language.
 
 ## Deployment
 

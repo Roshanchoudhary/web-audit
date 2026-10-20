@@ -45,7 +45,7 @@
       "No signup required",
       "Free basic audit",
       "Download PDF report",
-      "30 languages, incl. मैथिली",
+      "31 languages, incl. मैथिली",
       "Actionable recommendations"
     ]
   },
@@ -129,7 +129,7 @@
       },
       {
         "q": "Which languages are supported?",
-        "a": "30 languages including English, हिन्दी, বাংলা, मैथिली (Maithili), नेपाली, اردو and العربية with full right-to-left layout. More languages can be added with a single JSON file."
+        "a": "31 languages including English, हिन्दी, বাংলা, मैथिली (Maithili), नेपाली, اردو and العربية with full right-to-left layout. More languages can be added with a single JSON file."
       }
     ]
   },
@@ -402,7 +402,7 @@
       "h1": "About WebAudit by PDFKaj",
       "p1": "WebAudit by PDFKaj started from a simple frustration: most free “website checkers” show impressive numbers they cannot possibly know. A browser cannot read your server's security headers, and a single fetch is not a crawl — so we refuse to pretend otherwise.",
       "p2": "Every check in this tool carries a measurement badge: measured directly, estimated, or requires server/API analysis. The scoring engine never awards points for checks it could not run, and every report lists its own gaps.",
-      "p3": "The product is free, multilingual (30 languages, including Maithili with full Devanagari support) and built as a static site — no accounts, no personal data, no backend to breach.",
+      "p3": "The product is free, multilingual (31 languages, including Maithili with full Devanagari support) and built as a static site — no accounts, no personal data, no backend to breach.",
       "valuesTitle": "What we optimise for",
       "values": [
         "Accuracy before vanity scores",

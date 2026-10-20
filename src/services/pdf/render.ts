@@ -165,6 +165,29 @@ class ReportRenderer {
     return lines.length * lineHeight;
   }
 
+  /** Draw wrapped text one line at a time, starting a new page before the footer area. */
+  private paragraphFlow(
+    str: string,
+    opts: { size?: number; weight?: number; color?: string; x?: number; maxWidth?: number; lineHeight?: number } = {},
+  ): number {
+    const size = opts.size ?? 20;
+    const lineHeight = opts.lineHeight ?? Math.round(size * 1.5);
+    const fontString = font(size, opts.weight ?? 400);
+    const x = opts.x ?? this.left;
+    const maxWidth = opts.maxWidth ?? this.contentWidth;
+    const lines = this.wrap(str, maxWidth, fontString);
+    const ctx = this.ctx;
+    ctx.font = fontString;
+    ctx.fillStyle = opts.color ?? COLORS.ink;
+    let drawn = 0;
+    for (const lineText of lines) {
+      this.ensureSpace(lineHeight + 4);
+      ctx.fillText(lineText, x, this.y + size, maxWidth);
+      this.y += lineHeight;
+      drawn += lineHeight;
+    }
+    return drawn;
+  }
   /* ------------------------------ chrome --------------------------------- */
 
   private bandTitle(title: string, subtitle?: string): void {
@@ -552,38 +575,15 @@ class ReportRenderer {
             ? COLORS.fail
             : COLORS.na;
 
-    const titleFont = font(21, 700);
-    const bodyFont = font(18, 400);
-    const titleLines = this.wrap(title, this.contentWidth - 32, titleFont);
-    const descLines = this.wrap(
-      `${text.t('report.fields.what')}: ${description}`,
-      this.contentWidth - 32,
-      bodyFont,
-    );
-    const fixLines = this.wrap(
-      `${text.t('report.fields.fix')}: ${fix}`,
-      this.contentWidth - 32,
-      bodyFont,
-    );
     const metaLine = [
       text.t(`report.status.${issueItem.status}`),
       text.t(`report.severity.${issueItem.severity}`),
       text.t(`report.measurement.${issueItem.measurement}`),
       issueItem.evidence ? issueItem.evidence : '',
-    ]
-      .filter(Boolean)
-      .join('  ·  ');
+    ].filter(Boolean).join('  ·  ');
 
-    const metaLines = this.wrap(metaLine, this.contentWidth - 32, font(16, 500));
-    const height =
-      26 +
-      titleLines.length * 28 +
-      descLines.length * 26 +
-      fixLines.length * 26 +
-      metaLines.length * 22 +
-      30;
-    this.ensureSpace(Math.min(height, PAGE_H - MARGIN * 2 - FOOTER_SPACE));
-
+    // Paginate wrapped lines independently so long findings cannot overlap the footer.
+    this.ensureSpace(72);
     const ctx = this.ctx;
     ctx.fillStyle = dotColor;
     ctx.beginPath();
@@ -591,41 +591,15 @@ class ReportRenderer {
     ctx.fill();
 
     const textX = this.rtl ? this.left : this.left + 32;
-    const startY = this.y;
-    this.y = startY;
-    this.paragraph(titleLines.join('\n'), {
-      size: 21,
-      weight: 700,
-      x: textX,
-      maxWidth: this.contentWidth - 32,
-      lineHeight: 28,
-    });
+    this.paragraphFlow(title, { size: 21, weight: 700, x: textX, maxWidth: this.contentWidth - 32, lineHeight: 28 });
     this.y += 6;
-    this.paragraph(descLines.join('\n'), {
-      size: 18,
-      color: COLORS.ink,
-      x: textX,
-      maxWidth: this.contentWidth - 32,
-      lineHeight: 26,
-    });
+    this.paragraphFlow(`${text.t('report.fields.what')}: ${description}`, { size: 18, color: COLORS.ink, x: textX, maxWidth: this.contentWidth - 32, lineHeight: 26 });
     this.y += 4;
-    this.paragraph(fixLines.join('\n'), {
-      size: 18,
-      color: COLORS.brandDark,
-      x: textX,
-      maxWidth: this.contentWidth - 32,
-      lineHeight: 26,
-    });
+    this.paragraphFlow(`${text.t('report.fields.fix')}: ${fix}`, { size: 18, color: COLORS.brandDark, x: textX, maxWidth: this.contentWidth - 32, lineHeight: 26 });
     this.y += 6;
-    this.paragraph(metaLines.join('\n'), {
-      size: 16,
-      weight: 500,
-      color: COLORS.muted,
-      x: textX,
-      maxWidth: this.contentWidth - 32,
-      lineHeight: 22,
-    });
-    this.y += 18;
+    this.paragraphFlow(metaLine, { size: 16, weight: 500, color: COLORS.muted, x: textX, maxWidth: this.contentWidth - 32, lineHeight: 22 });
+    this.ensureSpace(24);
+    this.y += 8;
     this.line(this.left, this.right, this.y, COLORS.line);
     this.y += 18;
   }

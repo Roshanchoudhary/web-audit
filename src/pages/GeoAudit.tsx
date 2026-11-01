@@ -1,5 +1,11 @@
 import { useState, type FormEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useI18n } from '../i18n';
+import { localizePath } from '../i18n/paths';
+import { siteConfig } from '../config/site';
+import { runAudit } from '../audit/engine';
+import { createAuditProvider, auditErrorKey } from '../services/audit';
+import { reportStore } from '../services/report/store';
 import { SEOHead } from '../components/SEOHead';
 import { normalizeUrlInput, validateUrlInput, displayHost } from '../utils/url';
 
@@ -27,14 +33,39 @@ const COPY: Record<string, Copy> = {
 };
 
 export default function GeoAudit() {
-  const { lang } = useI18n();
+  const { lang, t } = useI18n();
+  const navigate = useNavigate();
   const c = COPY[lang] ?? COPY.en;
   const [website, setWebsite] = useState('');
   const [country, setCountry] = useState('');
   const [generated, setGenerated] = useState(false);
+  const [running, setRunning] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [errorKey, setErrorKey] = useState<string | null>(null);
   const websiteFavicon = faviconFor(website);
   const websiteHost = validateUrlInput(normalizedDomain(website)).ok ? displayHost(normalizedDomain(website)) : '';
-  const submit = (event: FormEvent) => { event.preventDefault(); if (!validateUrlInput(website).ok || !country.trim()) return; setWebsite(normalizedDomain(website)); setGenerated(true); };
+  const submit = async (event: FormEvent) => {
+    event.preventDefault();
+    const validation = validateUrlInput(website);
+    if (!validation.ok || !country.trim() || running) return;
+    const normalizedUrl = validation.normalized;
+    setWebsite(normalizedUrl);
+    setRunning(true);
+    setProgress(0);
+    setErrorKey(null);
+    try {
+      const report = await runAudit(normalizedUrl, createAuditProvider(), {
+        onStage: (_stage, nextProgress) => setProgress(nextProgress),
+      });
+      await reportStore.save(report);
+      setGenerated(true);
+      navigate(localizePath(`/report/${report.id}`, lang, siteConfig.defaultLanguage));
+    } catch (error) {
+      setErrorKey(auditErrorKey(error));
+    } finally {
+      setRunning(false);
+    }
+  };
   const sections = [c.local, c.content, c.mobile, c.trust];
   return <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
     <SEOHead title={c.title} description={c.intro} path={lang === 'en' ? '/geo-audit' : '/' + lang + '/geo-audit'} />
@@ -50,8 +81,9 @@ export default function GeoAudit() {
           <h2 className="text-xl font-bold text-slate-900">{c.overview}</h2>
           <label className="block text-sm font-semibold text-slate-700">{c.website}<input type="text" inputMode="url" autoCapitalize="none" spellCheck={false} required value={website} onChange={e=>setWebsite(e.target.value)} onBlur={()=>website && setWebsite(normalizedDomain(website))} placeholder="example.com" className="mt-1.5 w-full rounded-xl border border-slate-300 px-3 py-3 font-normal outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-100" />{websiteHost && websiteFavicon && <span className="mt-2 flex items-center gap-2 text-xs font-normal text-slate-500"><img src={websiteFavicon} alt="" width="22" height="22" className="size-5 rounded object-contain" onError={e=>{e.currentTarget.style.visibility="hidden";}} /><span className="font-semibold text-slate-700">{websiteHost}</span><span>· HTTPS will be added automatically</span></span>}</label>
           <label className="block text-sm font-semibold text-slate-700">{c.country}<input required value={country} onChange={e=>setCountry(e.target.value)} placeholder={lang === 'hi' ? 'जैसे भारत' : lang === 'bn' ? 'যেমন ভারত' : 'e.g. India'} autoComplete="country-name" className="mt-1.5 w-full rounded-xl border border-slate-300 px-3 py-3 font-normal outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-100" /></label>
-          <button className="w-full rounded-xl bg-teal-700 px-5 py-3.5 text-sm font-bold text-white shadow-sm transition hover:bg-teal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2">{c.submit}</button>
-          <p className="text-xs leading-5 text-slate-500">This creates a structured checklist, not a live search-engine crawl. Validate findings against current public data before making business decisions.</p>
+          <button disabled={running} className="w-full rounded-xl bg-teal-700 px-5 py-3.5 text-sm font-bold text-white shadow-sm transition hover:bg-teal-800 disabled:cursor-wait disabled:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2">{running ? `${lang === 'hi' ? 'ऑडिट चल रहा है' : lang === 'bn' ? 'অডিট চলছে' : 'Running audit'}… ${progress}%` : (lang === 'hi' ? 'वेबसाइट ऑडिट चलाएँ' : lang === 'bn' ? 'ওয়েবসাইট অডিট চালান' : 'Run website audit')}</button>
+          {errorKey && <p role="alert" className="rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700">{t(errorKey)}</p>}
+          <p className="text-xs leading-5 text-slate-500">This runs the website’s technical audit and opens its detailed report. Google Business Profile, reviews and live competitor data are not automatically verified by this audit.</p>
         </form>
         <div className="space-y-4">
           <h2 className="text-xl font-bold text-slate-900">{c.reportTitle}</h2>

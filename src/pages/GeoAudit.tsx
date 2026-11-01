@@ -4,8 +4,8 @@ import { SEOHead } from '../components/SEOHead';
 import { normalizeUrlInput, validateUrlInput, displayHost } from '../utils/url';
 
 type Copy = {
-  badge: string; title: string; intro: string; business: string; location: string; website: string;
-  industry: string; competitor: string; submit: string; reportTitle: string; overview: string;
+  badge: string; title: string; intro: string; country: string; website: string;
+  submit: string; reportTitle: string; overview: string;
   local: string; content: string; mobile: string; trust: string; competitorTitle: string;
   competitorNote: string; actions: string; actionItems: string[]; industries: string[];
 };
@@ -28,16 +28,12 @@ const COPY: Record<string, Copy> = {
 export default function GeoAudit() {
   const { lang } = useI18n();
   const c = COPY[lang] ?? COPY.en;
-  const [business, setBusiness] = useState('');
-  const [location, setLocation] = useState('');
   const [website, setWebsite] = useState('');
-  const [industry, setIndustry] = useState('');
-  const [competitors, setCompetitors] = useState('');
+  const [country, setCountry] = useState('');
   const [generated, setGenerated] = useState(false);
-  const competitorList = useMemo(() => competitors.split(',').map(v => v.trim()).filter(Boolean).map(normalizedDomain), [competitors]);
   const websiteFavicon = faviconFor(website);
   const websiteHost = validateUrlInput(normalizedDomain(website)).ok ? displayHost(normalizedDomain(website)) : '';
-  const submit = (event: FormEvent) => { event.preventDefault(); setWebsite(website ? normalizedDomain(website) : ''); setCompetitors(competitorList.join(', ')); setGenerated(true); };
+  const submit = (event: FormEvent) => { event.preventDefault(); setWebsite(website ? normalizedDomain(website) : ''); setGenerated(true); };
   const sections = [c.local, c.content, c.mobile, c.trust];
   return <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
     <SEOHead title={c.title} description={c.intro} path={lang === 'en' ? '/geo-audit' : '/' + lang + '/geo-audit'} />
@@ -51,11 +47,8 @@ export default function GeoAudit() {
       <div className="grid gap-8 p-5 sm:p-8 lg:grid-cols-[.95fr_1.05fr]">
         <form onSubmit={submit} className="space-y-4">
           <h2 className="text-xl font-bold text-slate-900">{c.overview}</h2>
-          <label className="block text-sm font-semibold text-slate-700">{c.business}<input required value={business} onChange={e=>setBusiness(e.target.value)} className="mt-1.5 w-full rounded-xl border border-slate-300 px-3 py-3 font-normal outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-100" /></label>
-          <label className="block text-sm font-semibold text-slate-700">{c.location}<input required value={location} onChange={e=>setLocation(e.target.value)} placeholder="e.g. Kolkata, West Bengal" className="mt-1.5 w-full rounded-xl border border-slate-300 px-3 py-3 font-normal outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-100" /></label>
           <label className="block text-sm font-semibold text-slate-700">{c.website}<input type="text" inputMode="url" autoCapitalize="none" spellCheck={false} value={website} onChange={e=>setWebsite(e.target.value)} onBlur={()=>website && setWebsite(normalizedDomain(website))} placeholder="example.com" className="mt-1.5 w-full rounded-xl border border-slate-300 px-3 py-3 font-normal outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-100" />{websiteHost && websiteFavicon && <span className="mt-2 flex items-center gap-2 text-xs font-normal text-slate-500"><img src={websiteFavicon} alt="" width="22" height="22" className="size-5 rounded object-contain" onError={e=>{e.currentTarget.style.visibility="hidden";}} /><span className="font-semibold text-slate-700">{websiteHost}</span><span>· HTTPS will be added automatically</span></span>}</label>
-          <label className="block text-sm font-semibold text-slate-700">{c.industry}<select value={industry} onChange={e=>setIndustry(e.target.value)} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-3 font-normal outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-100">{c.industries.map((x,i)=><option key={x} value={i===0?'':x}>{x}</option>)}</select></label>
-          <label className="block text-sm font-semibold text-slate-700">{c.competitor}<textarea value={competitors} onChange={e=>setCompetitors(e.target.value)} onBlur={()=>setCompetitors(competitorList.join(", "))} rows={3} placeholder="competitor-one.com, competitor-two.com" className="mt-1.5 w-full resize-y rounded-xl border border-slate-300 px-3 py-3 font-normal outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-100" /><span className="mt-1 block text-xs font-normal text-slate-500">Enter domains only — www, http:// or https:// are optional.</span></label>
+          <label className="block text-sm font-semibold text-slate-700">{c.country}<select required value={country} onChange={e=>setCountry(e.target.value)} className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-3 font-normal outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-100"><option value="">{lang === 'hi' ? 'देश चुनें' : lang === 'bn' ? 'দেশ বেছে নিন' : 'Select country'}</option>{["Australia","Bangladesh","Brazil","Canada","France","Germany","India","Indonesia","Ireland","Italy","Japan","Malaysia","Mexico","Nepal","Netherlands","New Zealand","Nigeria","Pakistan","Philippines","Singapore","South Africa","Spain","Sri Lanka","United Arab Emirates","United Kingdom","United States"].map(x=><option key={x} value={x}>{x}</option>)}</select></label>
           <button className="w-full rounded-xl bg-teal-700 px-5 py-3.5 text-sm font-bold text-white shadow-sm transition hover:bg-teal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2">{c.submit}</button>
           <p className="text-xs leading-5 text-slate-500">This creates a structured checklist, not a live search-engine crawl. Validate findings against current public data before making business decisions.</p>
         </form>
@@ -63,11 +56,11 @@ export default function GeoAudit() {
           <h2 className="text-xl font-bold text-slate-900">{c.reportTitle}</h2>
           <div className="rounded-2xl border border-teal-100 bg-teal-50 p-4 sm:p-5">
             <p className="text-xs font-bold uppercase tracking-wider text-teal-800">{c.overview}</p>
-            <p className="mt-2 text-lg font-bold text-slate-900">{generated ? business : 'Local visibility • SEO • Competitors'}</p>
-            <p className="mt-1 text-sm text-slate-600">{generated ? [location,industry,website].filter(Boolean).join(' · ') : 'Enter your business details to personalise the action plan.'}</p>
+            <p className="mt-2 text-lg font-bold text-slate-900">{generated ? websiteHost || 'Website audit' : 'Local visibility • SEO • Competitors'}</p>
+            <p className="mt-1 text-sm text-slate-600">{generated ? [country, websiteHost].filter(Boolean).join(' · ') : 'Enter a website domain and country to personalise the action plan.'}</p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">{sections.map((s,i)=><div key={s} className="rounded-2xl border border-slate-200 p-4"><p className="text-sm font-bold text-slate-900">{i+1}. {s}</p><p className="mt-2 text-sm leading-6 text-slate-600">{['Profile completeness, location relevance, NAP consistency and local intent.','Page titles, service-area pages, useful content, schema and internal links.','Responsive layout, tap targets, readable text, forms and page performance.','Authentic reviews, trusted citations, contact details and reputation signals.'][i]}</p><span className="mt-3 inline-flex rounded-full bg-amber-50 px-2.5 py-1 text-xs font-semibold text-amber-800">Needs verification</span></div>)}</div>
-          <div className="rounded-2xl border border-slate-200 p-4 sm:p-5"><h3 className="font-bold text-slate-900">{c.competitorTitle}</h3><p className="mt-2 text-sm leading-6 text-slate-600">{c.competitorNote}</p>{generated && competitorList.length>0 ? <ul className="mt-3 space-y-2">{competitorList.map(v=><li key={v} className="flex items-center gap-2 break-all rounded-lg bg-slate-50 px-3 py-2 text-sm font-medium text-slate-800">{faviconFor(v) && <img src={faviconFor(v)!} alt="" width="22" height="22" className="size-5 shrink-0 rounded object-contain" onError={e=>{e.currentTarget.style.visibility="hidden";}} />}<span className="min-w-0 break-all">{validateUrlInput(v).ok ? displayHost(v) : v}</span> <span className="font-normal text-slate-500">— review profile, pages, reviews, citations and mobile UX</span></li>)}</ul> : <p className="mt-3 text-sm text-slate-500">Add competitor domains above to include them in your review checklist.</p>}</div>
+          <div className="rounded-2xl border border-slate-200 p-4 sm:p-5"><h3 className="font-bold text-slate-900">{c.competitorTitle}</h3><p className="mt-2 text-sm leading-6 text-slate-600">{c.competitorNote}</p><p className="mt-3 text-sm text-slate-500">Use the selected country to guide local search intent, business listing checks, regional keywords and relevant competitor research. Live competitor discovery is not yet connected.</p></div>
           <div className="rounded-2xl border border-slate-200 p-4 sm:p-5"><h3 className="font-bold text-slate-900">{c.actions}</h3><ol className="mt-3 list-decimal space-y-3 ps-5 text-sm leading-6 text-slate-700">{c.actionItems.map(x=><li key={x}>{x}</li>)}</ol><button type="button" onClick={()=>window.print()} className="mt-5 rounded-xl border border-slate-300 px-4 py-2.5 text-sm font-bold text-slate-800 hover:bg-slate-50">Print / Save as PDF</button></div>
         </div>
       </div>

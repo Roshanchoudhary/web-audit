@@ -16,6 +16,7 @@ export const TOOL_PAGES: ToolPageDef[] = [
   { path: 'website-accessibility-checker', contentKey: 'accessibilityChecker' },
   { path: 'technical-seo-audit', contentKey: 'technicalSeoAudit' },
   { path: 'website-security-check', contentKey: 'securityCheck' },
+  { path: 'geo-audit', contentKey: 'geoAudit' },
 ];
 
 export interface StaticPageDef {

@@ -1,4 +1,5 @@
 import { useId } from 'react';
+import { normalizeUrlInput, validateUrlInput, displayHost } from '../utils/url';
 
 interface URLInputProps {
   value: string;
@@ -9,10 +10,21 @@ interface URLInputProps {
   disabled?: boolean;
 }
 
-/** Audited-URL input with visible label, icon and inline error messaging. */
+/** URL input that accepts a bare domain and normalizes it to HTTPS. */
 export function URLInput({ value, onChange, label, placeholder, error, disabled }: URLInputProps) {
   const id = useId();
   const errorId = `${id}-error`;
+  const candidate = normalizeUrlInput(value);
+  const validation = validateUrlInput(value);
+  const normalizedUrl = validation.ok ? validation.url : null;
+  const hostLabel = normalizedUrl ? displayHost(normalizedUrl) : null;
+  const faviconUrl = normalizedUrl
+    ? `https://www.google.com/s2/favicons?domain_url=${encodeURIComponent(new URL(normalizedUrl).origin)}&sz=64`
+    : null;
+
+  const normalizeOnBlur = () => {
+    if (candidate && validation.ok) onChange(validation.url);
+  };
 
   return (
     <div className="flex-1 min-w-0">
@@ -35,7 +47,7 @@ export function URLInput({ value, onChange, label, placeholder, error, disabled 
         </span>
         <input
           id={id}
-          type="url"
+          type="text"
           inputMode="url"
           enterKeyHint="go"
           autoComplete="url"
@@ -44,7 +56,8 @@ export function URLInput({ value, onChange, label, placeholder, error, disabled 
           value={value}
           disabled={disabled}
           onChange={(event) => onChange(event.target.value)}
-          placeholder={placeholder}
+          onBlur={normalizeOnBlur}
+          placeholder={placeholder || 'example.com'}
           aria-invalid={Boolean(error)}
           aria-describedby={error ? errorId : undefined}
           className={[
@@ -54,6 +67,22 @@ export function URLInput({ value, onChange, label, placeholder, error, disabled 
           ].join(' ')}
         />
       </div>
+      {normalizedUrl && hostLabel && faviconUrl && (
+        <div className="mt-2 flex min-w-0 items-center gap-2 text-xs text-slate-500" aria-live="polite">
+          <img
+            key={faviconUrl}
+            src={faviconUrl}
+            alt=""
+            width="20"
+            height="20"
+            loading="lazy"
+            onError={(event) => { event.currentTarget.style.visibility = 'hidden'; }}
+            className="size-5 shrink-0 rounded-sm object-contain"
+          />
+          <span className="truncate font-medium text-slate-700">{hostLabel}</span>
+          <span className="shrink-0">· HTTPS added automatically when needed</span>
+        </div>
+      )}
       {error && (
         <p id={errorId} className="mt-2 text-sm font-medium text-rose-600" role="alert">
           {error}
